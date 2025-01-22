@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(143, 117, 152);
+}
+
+#container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item.a {
+    background-color: white;
+    min-height: unset;
+}
+
+.grid-item.a {
+    background-color: rgb(206, 212, 255);
+}
+
+.grid-item.b {
+    background-color: rgb(149, 184, 229) !important;
+    rotate: 10deg;
+}
+
+.grid-item.c {
+    background-color: rgb(109, 179, 232);
+}
+
+.grid-item.d {
+    background-color: rgb(10, 121, 177);
+}
+
+.grid-item.e {
+    background-color: rgb(68, 105, 136);
+}
+
+.grid-item.f {
+    background-color: rgb(1, 62, 143);
+}
+
+.polaroid {
+    border: 21px solid white;
+    border-bottom: 60px solid white;
+    box-shadow: 3px 3px 15px #000;
+}
+
+.grid-item {
+    min-height: 300px;
+    background-color: aliceblue;
+}
+

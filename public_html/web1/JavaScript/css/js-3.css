@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: rgb(141, 116, 145);
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    /*background: rgb(91, 42, 91);*/
+    background: rgb(47,44,91);
+background: linear-gradient(24deg, rgba(47,44,91,1) 0%, rgba(122,84,119,1) 49%, rgba(215,145,46,1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    transition: all 0.5s ease-in;
+    transform-origin: center;
+}
+
+.square {
+    border-radius: unset;
+}
+
+.circle.move-me {
+    transform: rotate(45deg) translateX(400px) scale(1.3);
+}
+
+.circle.make-round {
+    border-radius: 50%;
+    background: rgba(215,145,46,1);
+}

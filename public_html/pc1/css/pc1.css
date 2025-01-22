@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f0ecc5;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #ded89d;
+    margin: 8px;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#gallery {
+    background-color: #f0ecc5;
+    display: grid;
+    grid: 1.44rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#gallery img {
+    width: 100%;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    unicode-bidi: isolate;
+}
+
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-end: 30px;
+    margin-inline-start: 20px;
+    font-size: 30px;
+}
+
+h1 {
+    margin-block-start: 0.67em;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main article p {
+    max-width: 60ch;
+}
+
+a {
+    color: #b5971f;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-end: 30px;
+    margin-inline-start: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #000;
+    text-decoration: none;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    background-color: #5b4812;
+}
+
+p {
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-bottom: 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+}
+
+nav ul li {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+iframe {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    unicode-bidi: isolate;
+}
+
+@media screen and (min-width: 450px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+#vids {
+    background-color: #f0ecc5;
+    display: grid;
+    grid: 1.44rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#vids img {
+    width: 100%;
+}
+
+@media screen and (min-width: 450px){
+
+    #vids{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    #vids{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 style="color: #863131;
+    letter-spacing: 5px; 
+    word-spacing: 20px; 
+    text-shadow: 3px 3px 1px #000; 
+    font-size: 120px;">Project 2</h1>
+
+    <h2>Duck with Sombrero</h2>
+
+    <figure>
+        <p>This is my duck. I don't really know why I decided on this but once I drew him, I thought he just had to
+            have a sombrero to go along with him. It just felt rigth.</p>
+        <p><img src="img/goose_sombrero.svg" alt="" width="30%" id="goose"></p>
+    </figure>
+
+    <section>
+        <div id="img">
+            <figcaption>The Sketch</figcaption>
+            <img class="drawing" src="img/Duck-sombrero_sketch.jpg" alt="" width="800px">
+        </div>
+    </section>
+
+    <button><a id = "game" href="../project3/game.html">Play Game</a></button>
+    <!--<button id = "game" onclick="top.location.href ='../project3/game.html'">play game</button>-->
+
+    <div id="panel">click to open</div>
+    <script>
+        const panel = document.getElementById("panel");
+        const sound = new Audio("./sounds/quack.mp3");
+
+        panel.onclick = function(){
+            this.classList.toggle("slide-up");
+            sound.play();
+        }
+    </script>
+
+    <p><a href="../index.html">Back</a></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #88a5cb;
+    font-size: 50px;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    display: inline-block;
+    margin-inline-start: 20px;
+    text-shadow: 2px 2px 1px #000;
+    text-decoration: none;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    background-color: #202b4f;
+}
+
+p {
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+pre {
+    text-align: center;
+}

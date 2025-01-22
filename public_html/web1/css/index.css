@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #bababa;
+    font-size: 50px;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    display: inline-block;
+    margin-inline-start: 20px;
+    text-shadow: 2px 2px 1px #000;
+    text-decoration: none;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    background-color: grey;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    align-items: center;
+}

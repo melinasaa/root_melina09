@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#gallery {
+    background-color: rgb(222, 243, 215);
+    display: grid;
+    gap: 1.44rem;
+}
+
+@media screen and (min-width: 450px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+body {
+    background-color: #c4e7bd;
+}
+
+main article p {
+max-width: 60ch;
+}
+
+main {
+    background-color: #c4e7bd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+h1 {
+    margin-block-start: 0.67em;
+    text-align: center;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-end: 30px;
+    margin-inline-start: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-end: 30px;
+    margin-inline-start: 20px;
+}
+
+a {
+    color: #659b5e;
+    font-size: 50px;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    display: inline-block;
+    margin-inline-start: 20px;
+    text-shadow: 2px 2px 1px #000;
+    text-decoration: none;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    background-color: #163818;
+}
+
+p {
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+ 
+nav ul li {
+    display:inline-block;
+    margin-right: 30px;
+}
+
+header {
+    background-color: rgb(222, 243, 215);
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+}
+
+#animation {
+    background-color: rgb(222, 243, 215);
+    display: grid;
+    gap: 1.44rem;
+}
+
+@media screen and (min-width: 450px){
+
+    #animation{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    #animation{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+

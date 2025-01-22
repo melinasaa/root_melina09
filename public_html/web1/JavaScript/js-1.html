@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Demo 1</title>
+    <style>
+        body{background-color: salmon;}
+    </style>
+</head>
+<body>
+    <h1>JavaSript - Demo 1</h1>
+    <main id="content">loading...</main>
+    <button onclick="testing()">Click Me</button>
+    
+    <script>
+        alert("new code unlocked -Livia")
+        console.log("Page loaded successfully")
+
+        // Variables
+        // dynamic variable type "let" (data can be changed)
+
+        let myName = "Melina";
+
+        myName = "sam";
+        
+        console.log(myName)
+
+        // constant variable (data can't be changed)
+        const pi = 3.141952653589;
+
+        console.log(pi * 5);
+
+        // mixed message logging
+        // uses + concatenate strings with other stings or data
+        // string = textual data, in quotes
+        console.log("Pi times 5: " + pi*5)
+
+        function lightMcqueen() {
+            alert("⚡️Katchow⚡️")
+        }
+
+        let mySound = new Audio("sounds/mobile-phone-ringtone-6769.mp3")
+
+        const myContent = document.getElementById("content")
+
+        function testing() {
+            // alert ("testing");
+            mySound.play();
+            myContent.innerHTML = '<h2>ahhhhhhh</h2>'
+
+        } 
+
+    </script>
+
+</body>
+</html>
