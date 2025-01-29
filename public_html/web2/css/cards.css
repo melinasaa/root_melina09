@@ -1,0 +1,76 @@
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.44rem;
+    padding: 1.44rem 0.833rem;
+}
+
+#cards figure {
+    position: relative;
+}
+
+#cards a{
+  border: solid 1px rgba(87, 39, 122, 0.295);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#cards img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+}
+
+#cards section{
+  padding: 0.833rem;
+}
+
+#cards h3 {
+  font-size: clamp(0.833rem, 1.6vw + 0.579rem, 1.728rem);
+  opacity: 0.5;
+  transition: opacity 1.5s;
+}
+
+#cards .over{
+  position: relative;
+  transform: translateY(1.728rem);
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+#cards a:hover {
+  transition: color 1s;
+}
+
+#cards a:hover h3, #cards a:hover p{
+  opacity: 1;
+}
+
+#cards section{
+  transform: translateY(2.074rem);
+  transition: transform 0.25s;
+}
+
+#cards a:hover section{
+  transform: translateY(0);
+}
+
+#cards a:hover .over{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (min-width:525px) {
+  #cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:925px) {
+  #cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
