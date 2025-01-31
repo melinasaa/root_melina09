@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 24px;
+    line-height: 1.44;
+    height: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4.3rem;
+    margin-block-start: 0.67em;
+    text-align: center;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+  
+h2 {font-size: 2.074rem;}
+  
+h3 {font-size: 1.728rem;}
+  
+h4 {font-size: 1.44rem;}
+  
+h5 {font-size: 1.2rem;}
+  
+small, .text_small {font-size: 0.833rem;}
+pre,
+code {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: pre-wrap;
+}
+
+small {
+    font-size: 0.777rem;
+}
+  
+strong {
+    color: rgba(255, 162, 87, 1);
+}
+  
+ul {
+    margin: 0 1.44em;
+}
+  
+body {
+    min-height: 110vh;
+    font-family: "Inter", sans-serif;
+    background-color: #c4e7bd;
+}
+  
+h2, h3, h4 {
+    color: #659b5e;
+    display: inline-block;
+    text-shadow: 2px 2px 1px #000;
+    text-decoration: none;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    text-align: center;
+}
+  
+figcaption {
+    width: 100%;
+    text-align: center;
+    font-size: 0.833rem;
+    color: #659b5e;
+}
+  
+a:link,
+a:visited {
+    color: rgba(151, 193, 234, 0.85);
+    text-align: center;
+}
+  
+a:hover,
+a:focus {
+    color: rgba(236, 121, 66, 1);
+    text-decoration: none;
+    text-align: center;
+}
+  
+a:active {
+    color: rgba(151, 193, 234, 0.85);
+    text-align: center;
+}
+  
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+  
+.video_container{
+    width: 100%;
+}
+
+.video_container iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.video_container.anamorphic iframe{
+  
+    aspect-ratio: 2.85/1;
+}
+  
+  
+  /* end of basic styling */
+  
+#cal svg {
+    width: 24px;
+}
+  
+hr {
+    margin: 3.583rem 0;
+} 
+  
+@media screen and (min-width:1200px) {
+    .columns-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.44rem;
+    }
+}
