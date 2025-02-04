@@ -1,0 +1,37 @@
+a:link{
+    transition: color 0.5s;
+}
+
+img{
+    opacity: 0.25;
+    transition: opacity 500ms;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+/* challenge */
+
+figure{
+    position: relative;
+}
+
+figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+figure .vidible{
+    opacity: 1;
+}
+
+figure .hidden{
+    opacity: 0;
+}
+
+figure:hover .hidden{
+    opacity: 1;
+}
