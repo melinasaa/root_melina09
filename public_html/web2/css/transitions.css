@@ -5,6 +5,8 @@ a:link{
 img{
     opacity: 0.25;
     transition: opacity 500ms;
+    border-radius: 10%;
+    align-items: center;
 }
 
 img:hover{
@@ -34,4 +36,8 @@ figure .hidden{
 
 figure:hover .hidden{
     opacity: 1;
+}
+
+p{
+    color: #7fb069;
 }

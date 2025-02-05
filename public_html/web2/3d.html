@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transitions</title>
-    
-    <link rel="stylesheet" href="css/transitions.css">
+    <title>3D Transform</title>
+
+    <link rel="stylesheet" href="css/3d.css">
     <link rel="stylesheet" href="css/web2.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,26 +16,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
 
-
+</head>
 </head>
 <body>
-    <header>
-        <nav><a href="index.html">Back</a>
-             <a href="#">other</a>
-        </nav>
-    </header>
-
+    <h1>3D demo</h1>
+    <p><a href="index.html">back</a></p>
     <main>
-        <h1>animation :: transitions</h1>
-        <section>
-            <p>Animation made following the video:</p>
-            <img src="img/playing_cards.jpg" alt="">
+        <section class="scene">
+            <div class="center"></div>
+            <article class="floor"></article>
+            <article class="cube">
+                <div class="front"></div>
+                <div class="back"></div>
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </article>
+            <article class="ball"></article>
         </section>
-        <p>Challenge:</p>
-        <figure id="Photo">
-            <img src="img/playing_cards.jpg" class="visibe" alt="">
-            <img src="img/blue_moon.png" class="hidden" alt="">
-        </figure>
     </main>
 </body>
 </html>

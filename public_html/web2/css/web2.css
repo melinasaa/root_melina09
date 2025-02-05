@@ -12,6 +12,10 @@ html {
  h1 {
     margin-top: 0;
     font-size: 4.3rem;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 30px; text-align: center;
 }
   
 h2 {font-size: 2.074rem;}
@@ -35,8 +39,8 @@ small {
     font-size: 0.777rem;
 }
   
-strong {
-    color: rgba(255, 162, 87, 1);
+strong{
+    color: #ca3c25;
 }
   
 ul {
@@ -45,17 +49,17 @@ ul {
   
 body {
     min-height: 110vh;
-    font-family: "Inter", sans-serif;
+    /*font-family: "Inter", sans-serif;*/
     color: rgb(240 240 240 /1);
-    background-color: rgb(63, 32, 80);
+    background-color: #0d1c05;
 }
   
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Inter', sans-serif;
-    color: rgb(224 224 224 /1);
+    /*font-family: 'Inter', sans-serif;*/
+    color: #fffbbd;
 }
   
 figcaption {
@@ -67,24 +71,29 @@ figcaption {
   
   /* anchor tag pseudo elements */
 a{
-    font-family: 'Inter', sans-serif;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    text-align: center;
 }
   
 a:link,
 a:visited {
-    color: rgba(151, 193, 234, 0.85);
+    color: #7fb069;
     /*transition: color 0.5s;*/
 }
   
 a:hover,
 a:focus {
-    color: rgba(236, 121, 66, 1);
+    color: #ca3c25;
+    ;
     text-decoration: none;
     /*background-color: rgba(240, 240, 240, 0.15);*/
 }
   
 a:active {
-    color: rgba(151, 193, 234, 0.85);
+    color: #7fb069;
 }
   
 img, video {
@@ -116,6 +125,13 @@ img, video {
 hr {
     margin: 3.583rem 0;
 } 
+
+p{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
   
 @media screen and (min-width:1200px) {
     .columns-2{
