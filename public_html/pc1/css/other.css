@@ -40,7 +40,7 @@ small {
 }
   
 strong{
-    color: #2f3d6f;
+    color: #ca3c25;
 }
   
 ul {
@@ -51,7 +51,7 @@ body {
     min-height: 110vh;
     /*font-family: "Inter", sans-serif;*/
     color: rgb(240 240 240 /1);
-    background-color: #c4e7bd;
+    background-color: #ded89d;
 }
   
 h1,
@@ -59,7 +59,7 @@ h2,
 h3,
 h4 {
     /*font-family: 'Inter', sans-serif;*/
-    color: #659b5e;
+    color: #b5971f;
 }
   
 figcaption {
@@ -80,20 +80,20 @@ a{
   
 a:link,
 a:visited {
-    color: #659b5e;
+    color: #b5971f;
     /*transition: color 0.5s;*/
 }
   
 a:hover,
 a:focus {
-    color: #22438a;
+    color: #ca3c25;
     ;
     text-decoration: none;
     /*background-color: rgba(240, 240, 240, 0.15);*/
 }
   
 a:active {
-    color: #659b5e;
+    color: #b5971f;
 }
   
 img, video {
