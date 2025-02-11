@@ -15,7 +15,7 @@ h1 {
 
 a {
     color: #bababa;
-    font-size: 50px;
+    font-size: 30px;
     /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
     display: inline-block;
     margin-inline-start: 20px;
@@ -28,14 +28,41 @@ a {
     letter-spacing: 3px;
 }
 
-a:hover {
-    background-color: grey;
-}
-
 p {
     text-align: center;
 }
 
-img {
-    align-items: center;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    grid-gap: 2rem;
+    margin-left: 60px;
+}
+
+.squares{
+    width: 200px;
+    height: 150px;
+    border-radius: 8%;
+    background-color: #2e3351;
+    box-shadow: #000000 3px 3px 1px;
+}
+
+.squares:hover{
+    transform: scale(110%);
+    background-color: #444b74;
+}
+
+@media screen and (min-width: 750px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
