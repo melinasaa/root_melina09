@@ -4,30 +4,135 @@
     box-sizing: 0;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
+h1{
+    margin-top: 0;
+    font-size: 4.3rem;
     font-family: "Barrio", system-ui;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 30px; text-align: center;
+}
+  
+h2 {font-size: 2.074rem;}
+  
+h3 {font-size: 1.728rem;}
+  
+h4 {font-size: 1.44rem;}
+  
+h5 {font-size: 1.2rem;}
+  
+small, .text_small {font-size: 0.833rem;}
+pre,
+code {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: pre-wrap;
 }
 
-a {
-    color: #bababa;
-    font-size: 50px;
-    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
-    display: inline-block;
-    margin-inline-start: 20px;
-    text-shadow: 2px 2px 1px #000;
-    text-decoration: none;
+small {
+    font-size: 0.777rem;
+}
+  
+strong{
+    color: #3288ca;
+}
+  
+ul {
+    margin: 0 1.44em;
+}
+  
+body {
+    min-height: 110vh;
+    /*font-family: "Inter", sans-serif;*/
+    color: rgb(240 240 240 /1);
+    background-color: #ececec;
+}
+  
+h1,
+h2,
+h3,
+h4 {
+    /*font-family: 'Inter', sans-serif;*/
+    color: #939393;
+}
+  
+figcaption {
+    width: 100%;
+    text-align: center;
+    font-size: 0.833rem;
+    color: rgb(224 224 224 /1);
+  }
+  
+  /* anchor tag pseudo elements */
+a{
     font-family: "Ranchers", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 8px;
     letter-spacing: 3px;
+    text-align: center;
+    font-size: 25px;
+}
+  
+a:link,
+a:visited {
+    color: gray;
+    /*transition: color 0.5s;*/
+}
+  
+a:hover,
+a:focus {
+    color: #3288ca;
+    text-decoration: none;
+    /*background-color: rgba(240, 240, 240, 0.15);*/
+}
+  
+a:active {
+    color: gray;
+}
+  
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+  
+.video_container{
+    width: 100%;
 }
 
-p {
+.video_container iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.video_container.anamorphic iframe{
+  
+    aspect-ratio: 2.85/1;
+}
+  
+  
+  /* end of basic styling */
+  
+#cal svg {
+    width: 24px;
+}
+  
+hr {
+    margin: 3.583rem 0;
+} 
+
+p{
     text-align: center;
 }
+nav{
+    text-align: center;
+}
+  
+@media screen and (min-width:1200px) {
+    .columns-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.44rem;
+    }
+}
+  

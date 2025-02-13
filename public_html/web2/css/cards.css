@@ -10,7 +10,7 @@
 }
 
 #cards a{
-  border: solid 1px rgba(87, 39, 122, 0.295);
+  border: solid 1px rgba(118, 118, 118, 0.295);
   border-radius: 0.5rem;
   overflow: hidden;
   text-decoration: none;
@@ -71,6 +71,6 @@
 
 @media screen and (min-width:925px) {
   #cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
