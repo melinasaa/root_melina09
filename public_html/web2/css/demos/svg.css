@@ -1,0 +1,14 @@
+#sun{
+    animation: sunshine 5s infinite alternate-reverse;
+}
+
+@keyframes sunshine{
+    0%{
+        transform: translateX(-200px);
+    }
+
+    100%{
+        transform: translateX(700px);
+    }
+}
+
