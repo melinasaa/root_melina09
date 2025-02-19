@@ -19,7 +19,6 @@ header,
 section,
 footer {
     background-color: #261D1D;
-    height: 200px;
     width: 100%;
 }
 
@@ -81,8 +80,16 @@ a {
     letter-spacing: 2px;
 }
 
+img{
+    /*opacity: 0.25;*/
+    transition: opacity 500ms;
+    max-width: 100%;
+    height: auto;
+}
+
 figure {
     position: relative;
+    align-items: center;
 }
 
 figure img {
@@ -102,4 +109,23 @@ figure .hidden {
 
 figure:hover .hidden {
     opacity: 1;
+}
+
+.move-down{
+    transform: translateY(100px);
+}
+
+#move{
+    transition: transform 0.5s;
+}
+
+#gallery {
+    display: grid;
+    grid: 1.44rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#gallery img {
+    width: 100%;
 }
