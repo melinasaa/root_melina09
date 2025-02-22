@@ -108,7 +108,7 @@ figcaption {
 }
 
 #container {
-    display: grid;
+    display: gr;
     /* grid-template-columns: 1fr 1fr 1fr; */
     /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 130px;

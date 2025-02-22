@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #402F2D;
 }
@@ -16,7 +10,6 @@ nav>ul {
 }
 
 header,
-article,
 footer {
     background-color: #261D1D;
     width: 100%;
@@ -100,6 +93,10 @@ a {
     letter-spacing: 2px;
 }
 
+a:hover {
+    color: #c67866;
+}
+
 img {
     /*opacity: 0.25;*/
     transition: opacity 500ms;
@@ -142,13 +139,31 @@ figure:hover .hidden {
     transform: filter 1s;
 }
 
+.left-right {
+    transform: translate(100%);
+    filter: blur(0px);
+}
+
+#slide {
+    transition: transform 1s;
+    transform: filter 1s;
+}
+
 #gallery {
     display: grid;
-    grid: 1.44rem;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #gallery img {
     width: 100%;
+}
+
+#test {
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    display: inline-block;
+    position: relative;
 }

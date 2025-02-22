@@ -9,4 +9,13 @@ for (var i = 0; i < cards.length; i++) {
     })
 }
 
+let images = document.querySelectorAll('#slide')
+
+for (var i = 0; i < cards.length; i++) {
+    images[i].addEventListener('click', function (event) {
+        //console.log(this.id);
+        this.classList.toggle('left-right')
+    })
+}
+
 
