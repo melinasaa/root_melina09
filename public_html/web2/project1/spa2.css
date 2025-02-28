@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* headers */
+
 h1 {
     font-style: normal;
     font-family: "Erica One", serif;
@@ -47,8 +49,7 @@ h5 {
     font-family: "PT sans Narrow", serif;
     font-weight: 400;
     color: #FFDBAD;
-    text-align: center;
-    font-size: 100%;
+    font-size: 80%;
     letter-spacing: 1px;
 }
 
@@ -100,12 +101,12 @@ p#back {
     padding: 5%;
 }
 
-h5#info {
+h5.info {
     font-family: "PT sans Narrow", serif;
     font-weight: 400;
     color: #FFDBAD;
     text-align: center;
-    font-size: 100%;
+    font-size: 230%;
     letter-spacing: 1px;
     padding: 2%;
 }
@@ -115,7 +116,6 @@ h5#songs {
     font-weight: 400;
     color: #FFDBAD;
     text-align: center;
-    font-size: 120%;
     letter-spacing: 1px;
 }
 
@@ -129,6 +129,7 @@ h6#albums {
 }
 
 
+/* sections */
 
 body {
     background-color: #402F2D;
@@ -148,6 +149,10 @@ header {
 
 section {
     padding: 5%;
+}
+
+section#info {
+    padding: 16%;
 }
 
 main {
@@ -184,11 +189,17 @@ div.column {
 
 article {
     background-color: #261d1d;
-    padding: 2%;
+    padding: 4%;
 }
 
 iframe {
     text-align: center;
+}
+
+br#space {
+    display: block;
+    content: "";
+    margin: 10px;
 }
 
 
@@ -254,7 +265,7 @@ iframe {
 }
 
 #text {
-    margin: 5%;
+    margin: 2%;
 }
 
 .column {
@@ -276,7 +287,7 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
 .container {
@@ -364,7 +375,7 @@ iframe {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 25px;
+    font-size: 60%;
     text-align: center;
     font-family: "PT sans Narrow", serif;
     font-weight: 700;
@@ -382,7 +393,22 @@ iframe {
     background-color: #A65746;
 }
 
+figure#rumours {
+    position: relative;
+}
 
+figure#rumours img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+figure#rumours .vidible {
+    opacity: 1;
+}
+
+/* media querries */
 
 @media screen and (min-width: 450px) {
     #gallery {
@@ -407,6 +433,10 @@ iframe {
 
     h6 {
         font-size: 150%;
+    }
+
+    h5#info {
+        font-size: 200%;
     }
 
     h6#albums {
@@ -444,11 +474,15 @@ iframe {
     }
 
     h5 {
-        font-size: 200%;
+        font-size: 130%;
     }
 
     h6 {
         font-size: 200%;
+    }
+
+    h5#info {
+        font-size: 70%;
     }
 
     h6#albums {
@@ -469,6 +503,16 @@ iframe {
 
     .middle {
         top: 45%;
+    }
+
+    .collapsible {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .collapsible {
+        font-size: 110%;
     }
 }
 
@@ -491,11 +535,15 @@ iframe {
     }
 
     h5 {
-        font-size: 250%;
+        font-size: 160%;
     }
 
     h6 {
         font-size: 250%;
+    }
+
+    h5#info {
+        font-size: 120%;
     }
 
     h6#albums {
@@ -516,5 +564,35 @@ iframe {
 
     .middle {
         top: 45%;
+    }
+
+    .collapsible {
+        font-size: 130%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collapsible {
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .collapsible {
+        font-size: 200%;
+    }
+
+    h5#text {
+        font-size: 230%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .collapsible {
+        font-size: 270%;
+    }
+
+    h5#text {
+        font-size: 260%;
     }
 }
