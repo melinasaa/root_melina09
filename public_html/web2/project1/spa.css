@@ -5,6 +5,10 @@
     cursor: url(img/cursor.png) 12 12, auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* TEXT */
 
 h1 {
@@ -257,12 +261,6 @@ br#space {
     margin: 10px;
 }
 
-iframe {
-    text-align: center;
-    filter: grayscale(100%);
-    padding: 0% 5%;
-}
-
 img.flip-card {
     width: 100%;
     height: auto;
@@ -291,10 +289,10 @@ img.flip-card {
 }
 
 .image-box img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     transition: .5s;
+    width: 100%;
+    height: 115px;
 }
 
 .image-box:hover {
@@ -347,7 +345,6 @@ img.flip-card {
     text-align: center;
 }
 
-.active,
 .collapsible:hover {
     background-color: #402F2D;
 }
@@ -533,6 +530,11 @@ figure#rumours {
     figure#rumours {
         margin: 5%;
     }
+
+    .image-box img {
+        width: 100%;
+        height: 170px;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -631,6 +633,11 @@ figure#rumours {
 
     figure#rumours {
         margin: 0%;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: 260px;
     }
 }
 
@@ -739,6 +746,11 @@ figure#rumours {
     figure#rumours {
         margin: 0%;
     }
+
+    .image-box img {
+        width: 100%;
+        height: 480px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -754,6 +766,11 @@ figure#rumours {
 
     h5#text {
         font-size: 230%;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: 680px;
     }
 }
 
