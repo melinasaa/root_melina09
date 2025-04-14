@@ -1,8 +1,14 @@
+svg {
+  display: block;  
+  margin: auto;
+  padding: 20px ;
+}
 .sun {
-    animation: rotate 5s infinite;
+    animation: rotate 5s linear infinite;
+    transform-origin: center center;
 }
 
 @keyframes rotate {
-    from{ transform: rotate(-360deg); }
+    from{ transform: rotate(0deg); }
     to{ transform: rotate(360deg); }
 }

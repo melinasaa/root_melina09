@@ -5,11 +5,86 @@
     cursor: url(img/cursor.png) 12 12, auto;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/* TEXT */
+/* ALL */
+
+h3 {
+    font-style: normal;
+    font-family: "Erica One", serif;
+    font-weight: 200;
+    color: #F9BD6D;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 20px;
+    font-size: 200%;
+}
+
+body {
+    background-color: #5A3D2B;
+}
+
+.seperator {
+    background-color: #75C8AE;
+    height: 3px;
+}
+
+a.top-header:hover,
+a#back:hover {
+    color: #FFDBAD;
+    text-decoration: underline;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #75C8AE;
+    color: #5A3D2B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 45%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #261d1d;
+    font-size: 20px;
+    transition: 0.3sease;
+}
+
+p#back {
+    text-align: center;
+    padding: 5%;
+}
+
+/* NAV & HEADER */
+
+header {
+    background-color: #261d1d;
+    padding: 1% 3%;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+}
+
+a.top-header,
+a#back {
+    font-family: "vina sans", serif;
+    font-weight: 400;
+    color: #75C8AE;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 0% 5% 5%;
+}
 
 h1 {
     font-style: normal;
@@ -31,81 +106,11 @@ h2 {
     font-size: 100%;
 }
 
-h3 {
-    font-style: normal;
-    font-family: "Erica One", serif;
-    font-weight: 200;
-    color: #F9BD6D;
-    text-align: center;
-    letter-spacing: 3px;
-    margin: 20px;
-    font-size: 200%;
-}
+/* INTRO */
 
-h3#faves {
-    font-style: normal;
-    font-family: "Erica One", serif;
-    font-weight: 200;
-    color: #F9BD6D;
-    text-align: left;
-    letter-spacing: 3px;
-    font-size: 90%;
-    padding: 3% 5% 3%;
-    margin: 0%;
-}
-
-h4 {
-    font-family: "vina sans", serif;
-    font-weight: 400;
-    color: #F9BD6D;
-    text-align: center;
-    font-size: 200%;
-    padding: 3%;
-}
-
-h5 {
-    font-family: "PT sans Narrow", serif;
-    font-weight: 400;
-    color: #FFDBAD;
-    font-size: 100%;
-    letter-spacing: 1px;
-    text-align: justify;
-}
-
-h5#songs {
-    font-family: "PT sans Narrow", serif;
-    font-weight: 400;
-    color: #FFDBAD;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-h6 {
-    font-family: "PT sans Narrow", serif;
-    font-weight: 700;
-    color: #F9BD6D;
-    text-align: center;
-    font-size: 100%;
-    letter-spacing: 1px;
-}
-
-h6#albums {
-    font-family: "PT sans Narrow", serif;
-    font-weight: 700;
-    color: #F4A127;
-    text-align: center;
-    font-size: 40%;
-    letter-spacing: 1px;
-}
-
-h6#rectangle {
-    font-family: "PT sans Narrow", serif;
-    font-weight: 400;
-    color: #FFDBAD;
-    font-size: 50%;
-    letter-spacing: 1px;
-    text-align: left;
-    padding-left: 1%;
+main {
+    background-color: #261d1d;
+    padding: 5%;
 }
 
 p {
@@ -117,157 +122,6 @@ p {
     font-size: 100%;
     letter-spacing: 1px;
 }
-
-p#back {
-    text-align: center;
-    padding: 5%;
-}
-
-a.top-header,
-a#back {
-    font-family: "vina sans", serif;
-    font-weight: 400;
-    color: #75C8AE;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-a#rectangle {
-    font-family: "vina sans", serif;
-    font-weight: 400;
-    color: #261d1d;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 100%;
-    padding: 0px 0px 0px 30px;
-    top: 50%;
-}
-
-a#rectangle:hover {
-    color: #F9BD6D;
-    text-decoration: underline;
-}
-
-a.top-header:hover,
-a#back:hover {
-    color: #FFDBAD;
-    text-decoration: underline;
-}
-
-a#spotify {
-    font-family: "vina sans", serif;
-    font-weight: 400;
-    color: #FFDBAD;
-    text-align: center;
-    font-size: 90%;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-a#spotify:hover {
-    text-decoration: underline;
-    color: #F9BD6D;
-}
-
-.text {
-    color: #FFDBAD;
-    font-family: "PT sans Narrow", serif;
-    font-size: 200%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-}
-
-.collapsible {
-    background-color: #261d1d;
-    color: #F9BD6D;
-    cursor: pointer;
-    padding: 5px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 130%;
-    text-align: center;
-    font-family: "PT sans Narrow", serif;
-    font-weight: 700;
-}
-
-/* SECTIONS */
-
-body {
-    background-color: #5A3D2B;
-}
-
-nav>ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 100%;
-}
-
-header {
-    background-color: #261d1d;
-    padding: 1% 3%;
-}
-
-section {
-    padding: 0% 5% 5%;
-}
-
-main {
-    background-color: #261d1d;
-    padding: 5%;
-}
-
-article {
-    background-color: #261d1d;
-    padding: 4%;
-}
-
-div#gallery {
-    background-color: #261d1d;
-    padding: 3%;
-}
-
-div#grid {
-    background-color: #261d1d;
-    padding: 3%;
-}
-
-div#extra {
-    background-color: #261d1d;
-}
-
-div.row {
-    background-color: #261d1d;
-}
-
-figure#rumours {
-    position: relative;
-}
-
-figure#rumours .vidible {
-    opacity: 1;
-}
-
-br#space {
-    display: block;
-    content: "";
-    margin: 10px;
-}
-
-img.flip-card {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* CLASSES */
 
 .acordeon {
     height: 80%;
@@ -303,63 +157,7 @@ img.flip-card {
     flex-basis: 50%;
 }
 
-.image-fade {
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.container-fade {
-    position: relative;
-    width: 100%;
-}
-
-.container-fade:hover .image-fade {
-    opacity: 0.3;
-}
-
-.container-fade:hover .middle {
-    opacity: 1;
-}
-
-.active {
-    flex-basis: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.collapsible:hover {
-    background-color: #402F2D;
-}
-
-.content {
-    padding: 2% 5% 2%;
-    display: none;
-    overflow: hidden;
-    background-color: #F4A127;
-}
-
-.seperator {
-    background-color: #75C8AE;
-    height: 3px;
-}
+/* BAND */
 
 .container {
     position: relative;
@@ -393,6 +191,204 @@ img.flip-card {
     transform: scale(1);
 }
 
+#gallery img {
+    width: 100%;
+    padding: 5%;
+}
+
+#gallery {
+    display: grid;
+    grid: 1.44rem;
+    gap: 1rem;
+}
+
+h4 {
+    font-family: "vina sans", serif;
+    font-weight: 400;
+    color: #F9BD6D;
+    text-align: center;
+    font-size: 200%;
+    padding: 3%;
+}
+
+/* ALBUM */
+
+article {
+    background-color: #261d1d;
+    padding: 4%;
+}
+
+div#gallery {
+    background-color: #261d1d;
+    padding: 3%;
+}
+
+figure#rumours {
+    position: relative;
+}
+
+figure#rumours .vidible {
+    opacity: 1;
+}
+
+#text,
+figure#rumours {
+    margin: 5%;
+}
+
+h5 {
+    font-family: "PT sans Narrow", serif;
+    font-weight: 400;
+    color: #FFDBAD;
+    font-size: 100%;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+h5#songs {
+    font-family: "PT sans Narrow", serif;
+    font-weight: 400;
+    color: #FFDBAD;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.collapsible {
+    background-color: #261d1d;
+    color: #F9BD6D;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 130%;
+    text-align: center;
+    font-family: "PT sans Narrow", serif;
+    font-weight: 700;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.collapsible:hover {
+    background-color: #402F2D;
+}
+
+.content {
+    padding: 2% 5% 2%;
+    display: none;
+    overflow: hidden;
+    background-color: #F4A127;
+}
+
+/* EXTRA */
+
+h3#faves {
+    font-style: normal;
+    font-family: "Erica One", serif;
+    font-weight: 200;
+    color: #F9BD6D;
+    text-align: left;
+    letter-spacing: 3px;
+    font-size: 90%;
+    padding: 3% 5% 3%;
+    margin: 0%;
+}
+
+h6#albums {
+    font-family: "PT sans Narrow", serif;
+    font-weight: 700;
+    color: #F4A127;
+    text-align: center;
+    font-size: 40%;
+    letter-spacing: 1px;
+}
+
+h6#rectangle {
+    font-family: "PT sans Narrow", serif;
+    font-weight: 400;
+    color: #FFDBAD;
+    font-size: 50%;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 1%;
+}
+
+a#rectangle {
+    font-family: "vina sans", serif;
+    font-weight: 400;
+    color: #261d1d;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 100%;
+    padding: 0px 0px 0px 30px;
+    top: 50%;
+}
+
+a#rectangle:hover {
+    color: #F9BD6D;
+    text-decoration: underline;
+}
+
+a#spotify {
+    font-family: "vina sans", serif;
+    font-weight: 400;
+    color: #FFDBAD;
+    text-align: center;
+    font-size: 90%;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+a#spotify:hover {
+    text-decoration: underline;
+    color: #F9BD6D;
+}
+
+div#extra {
+    background-color: #261d1d;
+}
+
+.image-fade {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container-fade {
+    position: relative;
+    width: 100%;
+}
+
+.container-fade:hover .image-fade {
+    opacity: 0.3;
+}
+
+.container-fade:hover .middle {
+    opacity: 1;
+}
+
+.active {
+    flex-basis: 50%;
+}
+
 .rectangles {
     background-color: #F4A127;
     margin: 0 0 0.5%;
@@ -400,23 +396,6 @@ img.flip-card {
     padding: 1%;
     height: 100%;
 }
-
-.scroll-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #75C8AE;
-    color: #5A3D2B;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 45%;
-    cursor: pointer;
-    box-shadow: 0 0 10px #261d1d;
-    font-size: 20px;
-    transition: 0.3sease;
-}
-
-/* IDs */
 
 #rectangle1 {
     width: 85%;
@@ -436,31 +415,6 @@ img.flip-card {
 
 #rectangle5 {
     width: 45%;
-}
-
-#slide {
-    width: 100%;
-}
-
-#text,
-figure#rumours {
-    margin: 5%;
-}
-
-
-#gallery img {
-    width: 100%;
-    padding: 5%;
-}
-
-#gallery img:hover {
-    filter: blur(0px);
-}
-
-#gallery {
-    display: grid;
-    grid: 1.44rem;
-    gap: 1rem;
 }
 
 #grid {
@@ -675,7 +629,7 @@ figure#rumours {
     }
 
     h5 {
-        font-size: 145%;
+        font-size: 130%;
     }
 
     h6 {
@@ -711,7 +665,7 @@ figure#rumours {
     }
 
     .collapsible {
-        font-size: 140%;
+        font-size: 130%;
     }
 
     figure#rumours img {
@@ -749,7 +703,7 @@ figure#rumours {
 
     .image-box img {
         width: 100%;
-        height: 480px;
+        height: 370px;
     }
 }
 
@@ -770,7 +724,7 @@ figure#rumours {
 
     .image-box img {
         width: 100%;
-        height: 680px;
+        height: 620px;
     }
 }
 
