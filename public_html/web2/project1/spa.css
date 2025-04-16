@@ -296,6 +296,13 @@ h5#songs {
     background-color: #F4A127;
 }
 
+.columns {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    column-gap: 50px;
+    margin: 20px;
+}
+
 /* EXTRA */
 
 h3#faves {
@@ -567,11 +574,6 @@ div#extra {
         padding: 3%;
     }
 
-    .column {
-        float: left;
-        width: 50%;
-    }
-
     .left-right {
         transform: translate(100%);
     }
@@ -677,11 +679,6 @@ div#extra {
 
     div.column {
         padding: 3%;
-    }
-
-    .column {
-        float: left;
-        width: 50%;
     }
 
     .left-right {

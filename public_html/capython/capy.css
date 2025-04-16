@@ -21,11 +21,11 @@ h2#project {
     color: #49a2b2;
 }
 
-h2#ro {
+h2#role {
     color: #5f9948;
 }
 
-h2#ca {
+h2#capyskill {
     color: #825499;
 }
 
@@ -139,7 +139,7 @@ p {
     width: 100%;
 }
 
-#role {
+#me {
     background: #aede9b;
     border-radius: 40px;
     padding: 20px;
