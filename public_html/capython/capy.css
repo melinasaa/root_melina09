@@ -153,9 +153,34 @@ p {
     width: 100%;
 }
 
-#columns {
+#capys {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    column-gap: 50px;
+    margin: 20px;
+}
+
+#pro {
     grid-template-columns: 1fr 1fr;
     display: grid;
     column-gap: 50px;
     margin: 20px;
+}
+
+#roles {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    column-gap: 50px;
+    margin: 20px;
+}
+
+#logo {
+    position: absolute;
+    right: 2%;
+    width: 15%;
+}
+
+#head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
