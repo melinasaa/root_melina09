@@ -1,18 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIA</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="./img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="./img/favicon/favicon.svg    " type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Limelight&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="lia.css">
 </head>
+
 <body>
-    
+
+    <!-- <div class="mobile-container">
+        <div class="topnav">
+            <a class="active">THE MOVEMENTS</a>
+            <div id="myLinks">
+                <a href="#imp" class="nav">IMPRESSIONISM</a>
+                <a href="#post" class="nav">POST-IMPRESSIONISM</a>
+                <a href="#nouveau" class="nav">ART NOUVEAU</a>
+                <a href="#express" class="nav">EXPRESSIONISM</a>
+                <a href="#surreal" class="nav">SURREALISM</a>
+                <a href="#abstract" class="nav">ABSTRACT EXPRESSIONISM</a>
+                <a href="#pop" class="nav">POP ART</a>
+                <a href="#street" class="nav">STREET ART</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div> -->
+
+    <nav>
+        <ul class="background">
+            <li><a href="#imp" class="nav">IMPRESSIONISM</a></li>
+            <li><a href="#post" class="nav">POST-IMPRESSIONISM</a></li>
+            <li><a href="#nouveau" class="nav">ART NOUVEAU</a></li>
+            <li><a href="#express" class="nav">EXPRESSIONISM</a></li>
+            <li><a href="#surreal" class="nav">SURREALISM</a></li>
+            <li><a href="#abstract" class="nav">ABSTRACT EXPRESSIONISM</a></li>
+            <li><a href="#pop" class="nav">POP ART</a></li>
+            <li><a href="#street" class="nav">STREET ART</a></li>
+        </ul>
+    </nav>
+
+    <header class="background">
+        <h1>ART MOVEMENTS</h1>
+        <h2>From the 19th Century to Today</h2>
+    </header>
+
+    <section id="imp" class="info">
+        <div class="title">
+            <h3>IMPRESSIONISM</h3>
+            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+        <div>
+            <h1 class="dates">1860s-1890s</h1>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-imp">
+        <div>
+            <img src="img/dance.png" alt="">
+            <section>
+                <figcaption>THE DANCE CLASS</figcaption>
+                <h4>EDGAR DEGAS</h4>
+            </section>
+            <img src="img/galette.png" alt="">
+            <section>
+                <figcaption>BAL DE MOULIN DE LA GALETTE</figcaption>
+                <h4>PIERRE-AUGUST RENOIR</h4>
+            </section>
+        </div>
+        <div>
+            <img src="img/parc.png" alt="">
+            <section>
+                <figcaption>THE PARC MONCEAU</figcaption>
+                <h4>CLAUDE MONET</h4>
+            </section>
+
+            <img src="img/lilacs.png" alt="">
+            <section>
+                <figcaption>LILACS IN A WINDOW</figcaption>
+                <h4>MARY CASSAT</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="post" class="info">
+        <div>
+            <h1 class="dates">1890s-1900s</h1>
+        </div>
+        <div class="title">
+            <h3>POST-IMPRESSIONISM</h3>
+            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
+                fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-post">
+        <div>
+            <img src="img/sunday.png" alt="">
+            <section>
+                <figcaption>A SUNDAY AFTERNOON ON THE ISLAND OF LA GRANDE JATTE</figcaption>
+                <h4>GEORGE SEURAT</h4>
+            </section>
+
+            <img src="img/englishman.png" alt="">
+            <section>
+                <figcaption>THE ENGLISHMAN AT THE MOULIN ROUGE</figcaption>
+                <h4>HENRI DE TOULOUSSE-LAUTREC</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/starry.png" alt="">
+            <section>
+                <figcaption>THE STARRY NIGHT</figcaption>
+                <h4>VINCENT VAN GOGH</h4>
+            </section>
+
+            <img src="img/hat.png" alt="">
+            <section>
+                <figcaption>WOMAN WITH A HAT</figcaption>
+                <h4>HENRI MATISSE</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="nouveau" class="info">
+        <div class="title">
+            <h3>ART NOUVEAU</h3>
+            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+        <div>
+            <h1 class="dates">1890s-1910s</h1>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-nouveau">
+        <div>
+            <img src="img/paris.png" alt="">
+            <section>
+                <figcaption>ENTRANCES TO THE PARIS METROPOLITAIN</figcaption>
+                <h4>ALPHONSE GUIMARD</h4>
+            </section>
+
+            <img src="img/casa.png" alt="">
+            <section>
+                <figcaption>CASA BATLLO</figcaption>
+                <h4>ANTONI GAUDI</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/hope.png" alt="">
+            <section>
+                <figcaption>HOPE II</figcaption>
+                <h4>GUSTAV KLIMT</h4>
+            </section>
+
+            <img src="img/princess.png" alt="">
+            <section>
+                <figcaption>PRICESS HAIACYTH</figcaption>
+                <h4>ALPHONSE MUCHA</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="express" class="info">
+        <div>
+            <h1 class="dates">1900s-1920s</h1>
+        </div>
+        <div class="title">
+            <h3>EXPRESSIONISM</h3>
+            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
+                fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-express">
+        <div>
+            <img src="img/scream.png" alt="">
+            <section>
+                <figcaption>THE SCREAM</figcaption>
+                <h4>EDVARD MUNCH</h4>
+            </section>
+
+            <img src="img/horse.png" alt="">
+            <section>
+                <figcaption>THE BLUE RIDER</figcaption>
+                <h4>WASSILY KANDINSKY</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/lantern.png" alt="">
+            <section>
+                <figcaption>SELF-PORTARIT WITH CHINESE LANTERN PLANT</figcaption>
+                <h4>EGON SCHIELE</h4>
+            </section>
+
+            <img src="img/berlin.png" alt="">
+            <section>
+                <figcaption>STREET, BERLIN</figcaption>
+                <h4>ERNST LUDWIG KIRCHNER</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="surreal" class="info">
+        <div class="title">
+            <h3>SURREALISM</h3>
+            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+        <div>
+            <h1 class="dates">1920s-1950s</h1>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-surreal">
+        <div>
+            <img src="img/carnaval.png" alt="">
+            <section>
+                <figcaption>HERLEQUIN'S CARNAVAL</figcaption>
+                <h4>JOAN MIRO</h4>
+            </section>
+
+            <img src="img/lovers.png" alt="">
+            <section>
+                <figcaption>THE LOVERS II</figcaption>
+                <h4>RENE MEGRITTE</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/clocks.png" alt="">
+            <section>
+                <figcaption>THE PRESISTENCE OF MEMORY</figcaption>
+                <h4>SALVADOR DALI</h4>
+            </section>
+
+            <img src="img/hair.png" alt="">
+            <section>
+                <figcaption>SELF-PORTRAIT WITH CROPPED HAIR</figcaption>
+                <h4>FRIDA KAHLO</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="abstract" class="info">
+        <div>
+            <h1 class="dates">1940s-1960s</h1>
+        </div>
+        <div class="title">
+            <h3>ABSTRACT EXPRESSIONISM</h3>
+            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
+                fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-abstract">
+        <div>
+            <img src="img/pollock.png" alt="">
+            <section>
+                <figcaption>AUTUMN RYTHM </figcaption>
+                <h4>JACKSON POLLOCK</h4>
+            </section>
+
+            <img src="img/rothko.png" alt="">
+            <section>
+                <figcaption>N0.16</figcaption>
+                <h4>MARK ROTHKO</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/sea.png" alt="">
+            <section>
+                <figcaption>MOUNTAINS AND SEA</figcaption>
+                <h4>HELE FRANKENTHALER</h4>
+            </section>
+
+            <img src="img/gaea.png" alt="">
+            <section>
+                <figcaption>GAEA</figcaption>
+                <h4>LEE KRASNER</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="pop" class="info">
+        <div class="title">
+            <h3>POP ART</h3>
+            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+        <div>
+            <h1 class="dates">1950s-1960s</h1>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-pop">
+        <div>
+            <img src="img/jfk.png" alt="">
+            <section>
+                <figcaption>PRESIDENT ELECT</figcaption>
+                <h4>JAMES ROSENQUIST</h4>
+            </section>
+
+            <img src="img/campbell.png" alt="">
+            <section>
+                <figcaption>CAMPBELL'S SOUP CANS</figcaption>
+                <h4>ANDY WARHOL</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/whaam.png" alt="">
+            <section>
+                <figcaption>WHAAM!</figcaption>
+                <h4>ROY LICHTENSTEIN</h4>
+            </section>
+
+            <img src="img/shadow.png" alt="">
+            <section>
+                <figcaption>ME AND MY SHADOW</figcaption>
+                <h4>ROSALYND DREXLER</h4>
+            </section>
+        </div>
+    </article>
+
+    <section id="street" class="info">
+        <div>
+            <h1 class="dates">1970s-</h1>
+        </div>
+        <div class="title">
+            <h3>STREET ART</h3>
+            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
+                fuga.
+                Perspiciatis
+                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
+                incidunt.</p>
+        </div>
+    </section>
+
+    <article class="background" id="gallery-street">
+        <div>
+            <img src="img/bird.png" alt="">
+            <section>
+                <figcaption>BIRD ON MONEY</figcaption>
+                <h4>JEAN-MICHEL BASQUIAT</h4>
+            </section>
+
+            <img src="img/keith.png" alt="">
+            <section>
+                <figcaption>IGNORANCE = FEAR</figcaption>
+                <h4>KEITH HARING</h4>
+            </section>
+        </div>
+
+        <div>
+            <img src="img/rat.png" alt="">
+            <section>
+                <figcaption>REPLICA OF MADONNA DI LORETA</figcaption>
+                <h4>BLEK LE RAT</h4>
+            </section>
+
+            <img src="img/ballon.png" alt="">
+            <section>
+                <figcaption>GIRL WITH BALLOON</figcaption>
+                <h4>BANKSY</h4>
+            </section>
+        </div>
+    </article>
+
+    <p id="footer" class="background"><a href="../index.html" class="footer">Back</a></p>
 </body>
+
 </html>
