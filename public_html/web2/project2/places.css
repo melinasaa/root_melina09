@@ -1,0 +1,120 @@
+/* MUSEUMS */
+
+h6 {
+    text-align: center;
+    padding: 2%;
+}
+
+p#museum {
+    padding: 0% 4% 2%;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #292929;
+}
+
+img#museums {
+    padding: 8% 8% 5%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* #museums:hover {
+    transform: scale(110%);
+    transition: 0.8s;
+}
+
+#museums {
+    transform: scale(100%);
+    transition: 0.8s;
+} */
+
+.places {
+    padding: 0% 8% 6%;
+    text-align: center;
+}
+
+/* CARDS */
+
+#cards figure {
+    position: relative;
+}
+
+#cards a {
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#cards img {
+    position: absolute;
+}
+
+#cards h6 {
+    transition: opacity 1.5s;
+    padding: 0% 0% 2% 0%;
+}
+
+#cards p {
+    opacity: 0;
+}
+
+#cards .over {
+    position: relative;
+    transform: translateY(1.728rem);
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+#cards a:hover {
+    transition: color 1s;
+    cursor: url(img/c-hover.png), auto;
+}
+
+#cards a:hover h6,
+#cards a:hover p {
+    opacity: 1;
+    cursor: url(img/c-hover.png), auto;
+}
+
+#cards section {
+    transform: translateY(2.074rem);
+    transition: transform 0.25s;
+}
+
+#cards a:hover section {
+    transform: translateY(0);
+    cursor: url(img/c-hover.png), auto;
+}
+
+#cards a:hover .over {
+    transform: translateY(0);
+    opacity: 1;
+    cursor: url(img/c-hover.png), auto;
+}
+
+@media screen and (min-width: 400px) {
+    h6 {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h6 {
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h6 {
+        font-size: 250%;
+    }
+}

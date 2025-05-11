@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(img/c-normal.png), auto;
 }
 
 /* ALL */
@@ -16,53 +17,101 @@ html {
     margin: 1%;
 }
 
-/* NAV + HEADER */
+/* FONTS */
 
-a.nav {
+#pd-normal {
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    letter-spacing: 2px;
     color: #292929;
 }
 
-a.nav:hover,
-a.footer:hover {
+#pd-bold-italic {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #292929;
     font-style: italic;
-    text-decoration: underline;
 }
 
-a.footer {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: #292929;
-    font-size: 160%;
-}
-
-h1 {
-    font-style: normal;
+#limelight {
     font-family: "Limelight", serif;
     font-weight: 400;
     color: #292929;
+}
+
+#os-normal {
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    color: #292929;
+}
+
+#os-bold {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #292929;
+}
+
+/* NAV + HEADER + FOOTER */
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5%;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #BCCBAE;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.nav {
+    letter-spacing: 2px;
+}
+
+a:hover,
+#museums:hover {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: url(img/c-hover.png), auto;
+}
+
+a.footer {
+    font-size: 160%;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: #292929;
+}
+
+p.where {
     text-align: center;
-    font-size: 450%;
+    padding-bottom: 2%;
+}
+
+p#footer {
+    padding: 2%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
     letter-spacing: 3px;
     padding: 2% 0% 0%;
 }
 
 h2 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    color: #292929;
     text-align: center;
-    font-size: 150%;
-    padding: 0% 0% 2%;
+    padding: 0% 0% 1%;
+}
+
+h5 {
+    text-align: center;
+    padding-bottom: 2%;
 }
 
 /* SECTIONS */
@@ -70,6 +119,7 @@ h2 {
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .title {
@@ -77,159 +127,279 @@ h2 {
 }
 
 h3 {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
     letter-spacing: 2px;
-    font-style: italic;
-    font-size: 160%;
     text-align: center;
-    padding: 5%;
+    padding: 5% 10% 5% 5%;
 }
 
-#left {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    padding: 0% 0% 5% 15%;
-    justify-content: right;
-    font-size: 120%;
+.left {
+    padding: 0% 5% 5% 15%;
 }
 
-#right {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    padding: 0% 15% 5% 0%;
-    justify-content: right;
-    font-size: 120%;
+.right {
+    padding: 0% 15% 5% 5%;
+    text-align: right;
 }
 
 .dates {
-    font-size: 370%;
     padding: 8% 30%;
-}
-
-#gallery-imp {
-    display: grid;
-    grid-template-columns: 1.25fr 1fr;
-}
-
-#gallery-post {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-}
-
-#gallery-nouveau {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-}
-
-#gallery-express {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#gallery-surreal {
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-}
-
-#gallery-abstract {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-}
-
-#gallery-pop {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-}
-
-#gallery-street {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
 }
 
 img {
     width: 100%;
-    padding: 40px 40px 10px 40px;
+    padding: 8% 8% 2%;
 }
 
 figcaption {
-    font-family: "Oswald", sans-serif;
-    padding: 0px 40px 2px;
-    font-weight: 400;
+    padding: 0px 8% 0%;
 }
 
 h4 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 200;
-    font-size: 100%;
-    padding: 0px 40px 40px;
+    padding: 0px 8% 8%;
 }
 
-/* FOOTER */
+/* HAMBURGER MENU */
 
-p#footer {
-    text-align: center;
-    padding: 2%;
+.topnav {
+    overflow: hidden;
+    position: relative;
+    background-color: #BCCBAE;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: #292929;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.active {
+    background-color: #fbfbfb;
+    margin: 1%;
 }
 
 /* MEDIA QUERRIES */
 
 @media screen and (min-width: 400px) {
-
-    /* HAMBURGER MENU */
-
-    .topnav {
-        overflow: hidden;
-        background-color: #fbfbfb;
-        position: relative;
+    h1 {
+        font-size: 250%;
     }
 
-    .topnav #myLinks {
-        display: none;
+    h2 {
+        font-size: 100%;
     }
 
-    .topnav a {
-        color: #292929;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
+    h5 {
+        font-size: 100%;
     }
 
-    .topnav a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+    h3 {
+        font-size: 120%;
     }
 
-    .active {
-        background-color: #BCCBAE;
+    .dates {
+        font-size: 250%;
+    }
+
+    .left,
+    .right {
+        font-size: 50%;
+    }
+
+    figcaption {
+        font-size: 65%
+    }
+
+    h4 {
+        font-size: 65%;
+    }
+
+    p#museum {
+        font-size: 85%;
     }
 }
 
-@media screen and (min-width: 800px) {
-    nav>ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5%;
+@media screen and (max-width: 700px) {
+    #navbar {
+        display: none;
     }
+}
 
+@media screen and (min-width: 700px) {
     a.nav {
         font-size: 65%;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    nav>ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5%;
+    h1 {
+        font-size: 350%;
     }
 
+    h2 {
+        font-size: 150%;
+    }
+
+    h5 {
+        font-size: 100%;
+    }
+
+    h3 {
+        font-size: 160%;
+    }
+
+    .dates {
+        font-size: 370%;
+    }
+
+    .left,
+    .right {
+        font-size: 120%;
+    }
+
+    figcaption {
+        font-size: 80%
+    }
+
+    h4 {
+        font-size: 80%;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gallery-imp {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+    }
+
+    #gallery-post {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+    }
+
+    #gallery-nouveau {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    #gallery-express {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gallery-surreal {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+    }
+
+    #gallery-abstract {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+    }
+
+    #gallery-pop,
+    #gallery-street {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    .mobile-container {
+        display: none;
+    }
+
+    p#museum {
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     a.nav {
         font-size: 95%;
+    }
+
+    h1 {
+        font-size: 560%;
+    }
+
+    h2 {
+        font-size: 210%;
+    }
+
+    h5 {
+        font-size: 100%;
+    }
+
+    h3 {
+        font-size: 350%;
+    }
+
+    .dates {
+        font-size: 550%;
+    }
+
+    .left,
+    .right {
+        font-size: 200%;
+    }
+
+    figcaption {
+        font-size: 120%
+    }
+
+    h4 {
+        font-size: 120%;
+    }
+
+    #gallery-imp {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+    }
+
+    #gallery-post {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+    }
+
+    #gallery-nouveau {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    #gallery-express {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gallery-surreal {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+    }
+
+    #gallery-abstract {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+    }
+
+    #gallery-pop,
+    #post-street {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    p#museum {
+        font-size: 200%;
     }
 }

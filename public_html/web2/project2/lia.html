@@ -19,398 +19,412 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="lia.css">
+    <script src="lia.js"></script>
 </head>
 
 <body>
 
-    <!-- <div class="mobile-container">
+    <nav class="mobile-container">
         <div class="topnav">
-            <a class="active">THE MOVEMENTS</a>
+            <a class="active" id="pd-bold-italic">THE MOVEMENTS</a>
             <div id="myLinks">
-                <a href="#imp" class="nav">IMPRESSIONISM</a>
-                <a href="#post" class="nav">POST-IMPRESSIONISM</a>
-                <a href="#nouveau" class="nav">ART NOUVEAU</a>
-                <a href="#express" class="nav">EXPRESSIONISM</a>
-                <a href="#surreal" class="nav">SURREALISM</a>
-                <a href="#abstract" class="nav">ABSTRACT EXPRESSIONISM</a>
-                <a href="#pop" class="nav">POP ART</a>
-                <a href="#street" class="nav">STREET ART</a>
+                <a href="#imp" class="nav" id="pd-normal">IMPRESSIONISM</a>
+                <a href="#post" class="nav" id="pd-normal">POST-IMPRESSIONISM</a>
+                <a href="#nouveau" class="nav" id="pd-normal">ART NOUVEAU</a>
+                <a href="#express" class="nav" id="pd-normal">EXPRESSIONISM</a>
+                <a href="#surreal" class="nav" id="pd-normal">SURREALISM</a>
+                <a href="#abstract" class="nav" id="pd-normal">ABSTRACT EXPRESSIONISM</a>
+                <a href="#pop" class="nav" id="pd-normal">POP ART</a>
+                <a href="#street" class="nav" id="pd-normal">STREET ART</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myLinks");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            </script>
-        </div> -->
+        </div>
+    </nav>
 
-    <nav>
+    <nav id="navbar">
         <ul class="background">
-            <li><a href="#imp" class="nav">IMPRESSIONISM</a></li>
-            <li><a href="#post" class="nav">POST-IMPRESSIONISM</a></li>
-            <li><a href="#nouveau" class="nav">ART NOUVEAU</a></li>
-            <li><a href="#express" class="nav">EXPRESSIONISM</a></li>
-            <li><a href="#surreal" class="nav">SURREALISM</a></li>
-            <li><a href="#abstract" class="nav">ABSTRACT EXPRESSIONISM</a></li>
-            <li><a href="#pop" class="nav">POP ART</a></li>
-            <li><a href="#street" class="nav">STREET ART</a></li>
+            <li><a href="#imp" class="nav" id="pd-normal">IMPRESSIONISM</a></li>
+            <li><a href="#post" class="nav" id="pd-normal">POST-IMPRESSIONISM</a></li>
+            <li><a href="#nouveau" class="nav" id="pd-normal">ART NOUVEAU</a></li>
+            <li><a href="#express" class="nav" id="pd-normal">EXPRESSIONISM</a></li>
+            <li><a href="#surreal" class="nav" id="pd-normal">SURREALISM</a></li>
+            <li><a href="#abstract" class="nav" id="pd-normal">ABSTRACT EXPRESSIONISM</a></li>
+            <li><a href="#pop" class="nav" id="pd-normal">POP ART</a></li>
+            <li><a href="#street" class="nav" id="pd-normal">STREET ART</a></li>
         </ul>
     </nav>
 
     <header class="background">
-        <h1>ART MOVEMENTS</h1>
-        <h2>From the 19th Century to Today</h2>
+        <h1 id="limelight">ART MOVEMENTS</h1>
+        <h2 id="os-bold">From the 19th Century to Today</h2>
+        <p class="where"><a href="places.html" id="os-normal">WHERE TO SEE MODERN ART?</a></p>
     </header>
 
     <section id="imp" class="info">
         <div class="title">
-            <h3>IMPRESSIONISM</h3>
-            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">IMPRESSIONISM</h3>
+            <p class="left" id="os-bold">The Impressionist movements emerged in France in the 1860s after the Realism
+                movement. Artists started painting what
+                they saw around them, especially the effect of light, which is seen by the loose and visible
+                brushstrokes that make
+                Impressionism so recognizable. Often painted outside, thanks to the invention of tubed paint, were
+                landscapes, urban
+                life and, everyday scenes.</p>
         </div>
         <div>
-            <h1 class="dates">1860s-1890s</h1>
+            <h1 class="dates" id="limelight">1860s-1890s</h1>
         </div>
     </section>
 
     <article class="background" id="gallery-imp">
         <div>
-            <img src="img/dance.png" alt="">
+            <img src="img/imp/danse.jpg" alt="" class="image">
             <section>
-                <figcaption>THE DANCE CLASS</figcaption>
-                <h4>EDGAR DEGAS</h4>
+                <figcaption id="os-bold">THE DANCE CLASS</figcaption>
+                <h4 id="os-normal">EDGAR DEGAS</h4>
             </section>
-            <img src="img/galette.png" alt="">
+
+            <img src="img/imp/lilacs.jpg" alt="">
             <section>
-                <figcaption>BAL DE MOULIN DE LA GALETTE</figcaption>
-                <h4>PIERRE-AUGUST RENOIR</h4>
+                <figcaption id="os-bold">LILACS IN A WINDOW</figcaption>
+                <h4 id="os-normal">MARY CASSAT</h4>
             </section>
         </div>
         <div>
-            <img src="img/parc.png" alt="">
+            <img src="img/imp/parc.jpg" alt="">
             <section>
-                <figcaption>THE PARC MONCEAU</figcaption>
-                <h4>CLAUDE MONET</h4>
+                <figcaption id="os-bold">THE PARC MONCEAU</figcaption>
+                <h4 id="os-normal">CLAUDE MONET</h4>
             </section>
 
-            <img src="img/lilacs.png" alt="">
+            <img src="img/imp/outskirts.jpg" alt="">
             <section>
-                <figcaption>LILACS IN A WINDOW</figcaption>
-                <h4>MARY CASSAT</h4>
+                <figcaption id="os-bold">OUTSKIRTS OF PONT-AVEN</figcaption>
+                <h4 id="os-normal">PIERRE-AUGUST RENOIR</h4>
             </section>
         </div>
     </article>
 
     <section id="post" class="info">
         <div>
-            <h1 class="dates">1890s-1900s</h1>
+            <h1 class="dates" id="limelight">1890s-1900s</h1>
         </div>
         <div class="title">
-            <h3>POST-IMPRESSIONISM</h3>
-            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
-                fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">POST-IMPRESSIONISM</h3>
+            <p class="right" id="os-bold">Post-Impressionism was developed as a continuation/reaction of Impressionism
+                and focused more on personal expression.
+                Its artists used bolder colours, thicker paint, more abstract shapes and patterns, and the paintings are
+                often made to
+                convey the artist’s emotions instead of simply showing the observed world around them.
+            </p>
         </div>
     </section>
 
     <article class="background" id="gallery-post">
         <div>
-            <img src="img/sunday.png" alt="">
+            <img src="img/post-imp/sunday.jpg" alt="">
             <section>
-                <figcaption>A SUNDAY AFTERNOON ON THE ISLAND OF LA GRANDE JATTE</figcaption>
-                <h4>GEORGE SEURAT</h4>
+                <figcaption id="os-bold">A SUNDAY AFTERNOON ON THE ISLAND OF LA GRANDE JATTE</figcaption>
+                <h4 id="os-normal">GEORGE SEURAT</h4>
             </section>
 
-            <img src="img/englishman.png" alt="">
+            <img src="img/post-imp/gentelman.jpg" alt="">
             <section>
-                <figcaption>THE ENGLISHMAN AT THE MOULIN ROUGE</figcaption>
-                <h4>HENRI DE TOULOUSSE-LAUTREC</h4>
+                <figcaption id="os-bold">THE ENGLISHMAN AT THE MOULIN ROUGE</figcaption>
+                <h4 id="os-normal">HENRI DE TOULOUSSE-LAUTREC</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/starry.png" alt="">
+            <img src="img/post-imp/starry.jpg" alt="">
             <section>
-                <figcaption>THE STARRY NIGHT</figcaption>
-                <h4>VINCENT VAN GOGH</h4>
+                <figcaption id="os-bold">THE STARRY NIGHT</figcaption>
+                <h4 id="os-normal">VINCENT VAN GOGH</h4>
             </section>
 
-            <img src="img/hat.png" alt="">
+            <img src="img/post-imp/hat.jpg" alt="">
             <section>
-                <figcaption>WOMAN WITH A HAT</figcaption>
-                <h4>HENRI MATISSE</h4>
+                <figcaption id="os-bold">WOMAN WITH A HAT</figcaption>
+                <h4 id="os-normal">HENRI MATISSE</h4>
             </section>
         </div>
     </article>
 
     <section id="nouveau" class="info">
         <div class="title">
-            <h3>ART NOUVEAU</h3>
-            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">ART NOUVEAU</h3>
+            <p class="left" id="os-bold">Art Nouveau was an international decorative art movement that is mostly
+                featured outside of paintings. It was popular in
+                architecture, interior design, illustrations, furniture and some paintings too. Art nouveau is mostly
+                inspired by nature
+                elements like plants and flowers and aimed to break the boundaries between fine (works displayed and
+                addmired) and
+                applied (for commercial use) arts.
+            </p>
         </div>
         <div>
-            <h1 class="dates">1890s-1910s</h1>
+            <h1 class="dates" id="limelight">1890s-1910s</h1>
         </div>
     </section>
 
     <article class="background" id="gallery-nouveau">
         <div>
-            <img src="img/paris.png" alt="">
+            <img src="img/nouveau/paris.jpg" alt="">
             <section>
-                <figcaption>ENTRANCES TO THE PARIS METROPOLITAIN</figcaption>
-                <h4>ALPHONSE GUIMARD</h4>
+                <figcaption id="os-bold">ENTRANCES TO THE PARIS METROPOLITAIN</figcaption>
+                <h4 id="os-normal">ALPHONSE GUIMARD</h4>
             </section>
 
-            <img src="img/casa.png" alt="">
+            <img src="img/nouveau/casa.jpg" alt="">
             <section>
-                <figcaption>CASA BATLLO</figcaption>
-                <h4>ANTONI GAUDI</h4>
+                <figcaption id="os-bold">CASA BATLLO</figcaption>
+                <h4 id="os-normal">ANTONI GAUDI</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/hope.png" alt="">
+            <img src="img/nouveau/hope.jpg" alt="">
             <section>
-                <figcaption>HOPE II</figcaption>
-                <h4>GUSTAV KLIMT</h4>
+                <figcaption id="os-bold">HOPE II</figcaption>
+                <h4 id="os-normal">GUSTAV KLIMT</h4>
             </section>
 
-            <img src="img/princess.png" alt="">
+            <img src="img/nouveau/princess.jpg" alt="">
             <section>
-                <figcaption>PRICESS HAIACYTH</figcaption>
-                <h4>ALPHONSE MUCHA</h4>
+                <figcaption id="os-bold">PRICESS HAIACYTH</figcaption>
+                <h4 id="os-normal">ALPHONSE MUCHA</h4>
             </section>
         </div>
     </article>
 
     <section id="express" class="info">
         <div>
-            <h1 class="dates">1900s-1920s</h1>
+            <h1 class="dates" id="limelight">1900s-1920s</h1>
         </div>
         <div class="title">
-            <h3>EXPRESSIONISM</h3>
-            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
-                fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">EXPRESSIONISM</h3>
+            <p class="right" id="os-bold">Expressionism emerged in Germany in the early 20th century in part as a
+                reaction to impressionism. Similarly to
+                Post-Impressionism, Expressionism focuses on the artist's inner feelings and emotions, and not on the
+                external reality.
+                It is recognizable by its use of bold and exaggerated colors and lines, and distorted forms to express
+                different
+                emotions like anger, fear and alienation.</p>
         </div>
     </section>
 
     <article class="background" id="gallery-express">
         <div>
-            <img src="img/scream.png" alt="">
+            <img src="img/express/scream.jpg" alt="">
             <section>
-                <figcaption>THE SCREAM</figcaption>
-                <h4>EDVARD MUNCH</h4>
+                <figcaption id="os-bold">THE SCREAM</figcaption>
+                <h4 id="os-normal">EDVARD MUNCH</h4>
             </section>
 
-            <img src="img/horse.png" alt="">
+            <img src="img/express/rider.jpg" alt="">
             <section>
-                <figcaption>THE BLUE RIDER</figcaption>
-                <h4>WASSILY KANDINSKY</h4>
+                <figcaption id="os-bold">THE BLUE RIDER</figcaption>
+                <h4 id="os-normal">WASSILY KANDINSKY</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/lantern.png" alt="">
+            <img src="img/express/lantern.jpg" alt="">
             <section>
-                <figcaption>SELF-PORTARIT WITH CHINESE LANTERN PLANT</figcaption>
-                <h4>EGON SCHIELE</h4>
+                <figcaption id="os-bold">SELF-PORTARIT WITH CHINESE LANTERN PLANT</figcaption>
+                <h4 id="os-normal">EGON SCHIELE</h4>
             </section>
 
-            <img src="img/berlin.png" alt="">
+            <img src="img/express/berlin.jpg" alt="">
             <section>
-                <figcaption>STREET, BERLIN</figcaption>
-                <h4>ERNST LUDWIG KIRCHNER</h4>
+                <figcaption id="os-bold">STREET, BERLIN</figcaption>
+                <h4 id="os-normal">ERNST LUDWIG KIRCHNER</h4>
             </section>
         </div>
     </article>
 
     <section id="surreal" class="info">
         <div class="title">
-            <h3>SURREALISM</h3>
-            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">SURREALISM</h3>
+            <p class="left" id="os-bold">The Surrealist movement explored to unlock the continuous mind. Influenced by
+                psychoanalysis, it explores dreams and the
+                subconscious and uses irrational imagery and a mix of realism and fantastical to represent it, which
+                makes surrealist
+                artworks very recognizable. Artists used techniques like automatism to create, sometimes, uncanny
+                artworks that
+                represent the weirdness of dream.</p>
         </div>
         <div>
-            <h1 class="dates">1920s-1950s</h1>
+            <h1 class="dates" id="limelight">1920s-1950s</h1>
         </div>
     </section>
 
     <article class="background" id="gallery-surreal">
         <div>
-            <img src="img/carnaval.png" alt="">
+            <img src="img/surreal/miro.jpg" alt="">
             <section>
-                <figcaption>HERLEQUIN'S CARNAVAL</figcaption>
-                <h4>JOAN MIRO</h4>
+                <figcaption id="os-bold">HERLEQUIN'S CARNAVAL</figcaption>
+                <h4 id="os-normal">JOAN MIRO</h4>
             </section>
 
-            <img src="img/lovers.png" alt="">
+            <img src="img/surreal/lovers.jpg" alt="">
             <section>
-                <figcaption>THE LOVERS II</figcaption>
-                <h4>RENE MEGRITTE</h4>
+                <figcaption id="os-bold">THE LOVERS II</figcaption>
+                <h4 id="os-normal">RENE MEGRITTE</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/clocks.png" alt="">
+            <img src="img/surreal/clocks.jpg" alt="">
             <section>
-                <figcaption>THE PRESISTENCE OF MEMORY</figcaption>
-                <h4>SALVADOR DALI</h4>
+                <figcaption id="os-bold">THE PRESISTENCE OF MEMORY</figcaption>
+                <h4 id="os-normal">SALVADOR DALI</h4>
             </section>
 
-            <img src="img/hair.png" alt="">
+            <img src="img/surreal/hair.jpg" alt="">
             <section>
-                <figcaption>SELF-PORTRAIT WITH CROPPED HAIR</figcaption>
-                <h4>FRIDA KAHLO</h4>
+                <figcaption id="os-bold">SELF-PORTRAIT WITH CROPPED HAIR</figcaption>
+                <h4 id="os-normal">FRIDA KAHLO</h4>
             </section>
         </div>
     </article>
 
     <section id="abstract" class="info">
         <div>
-            <h1 class="dates">1940s-1960s</h1>
+            <h1 class="dates" id="limelight">1940s-1960s</h1>
         </div>
         <div class="title">
-            <h3>ABSTRACT EXPRESSIONISM</h3>
-            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
-                fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">ABSTRACT EXPRESSIONISM</h3>
+            <p class="right" id="os-bold">Abstract expressionism was developed in New York and was the first big
+                American art movement to be known worldwide. The
+                movement is recognized by the large scale of everything involving it like large canvases, large and
+                spontaneous
+                brushstrokes, and big and intense emotions. Different techniques were used like dripping and throwing
+                paint, or the
+                exploration of different colors.</p>
         </div>
     </section>
 
     <article class="background" id="gallery-abstract">
         <div>
-            <img src="img/pollock.png" alt="">
+            <img src="img/abstract/pollock.jpg" alt="">
             <section>
-                <figcaption>AUTUMN RYTHM </figcaption>
-                <h4>JACKSON POLLOCK</h4>
+                <figcaption id="os-bold">AUTUMN RYTHM </figcaption>
+                <h4 id="os-normal">JACKSON POLLOCK</h4>
             </section>
 
-            <img src="img/rothko.png" alt="">
+            <img src="img/abstract/rothko.jpg" alt="">
             <section>
-                <figcaption>N0.16</figcaption>
-                <h4>MARK ROTHKO</h4>
+                <figcaption id="os-bold">N0.16</figcaption>
+                <h4 id="os-normal">MARK ROTHKO</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/sea.png" alt="">
+            <img src="img/abstract/sea.jpg" alt="">
             <section>
-                <figcaption>MOUNTAINS AND SEA</figcaption>
-                <h4>HELE FRANKENTHALER</h4>
+                <figcaption id="os-bold">MOUNTAINS AND SEA</figcaption>
+                <h4 id="os-normal">HELE FRANKENTHALER</h4>
             </section>
 
-            <img src="img/gaea.png" alt="">
+            <img src="img/abstract/gaea.jpg" alt="">
             <section>
-                <figcaption>GAEA</figcaption>
-                <h4>LEE KRASNER</h4>
+                <figcaption id="os-bold">GAEA</figcaption>
+                <h4 id="os-normal">LEE KRASNER</h4>
             </section>
         </div>
     </article>
 
     <section id="pop" class="info">
         <div class="title">
-            <h3>POP ART</h3>
-            <p id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">POP ART</h3>
+            <p class="left" id="os-bold">Pop Art emerged in the UK and in the US as a reaction to post war consumer
+                culture. It took inspiration from popular
+                culture like comic books, television and advertising, and artists represented everyday objects in their
+                art. Pop art
+                challenged the view on fine art by incorporating imagery from popular culture. The use of bold colors
+                and collages is
+                what makes it so recognizable today.</p>
         </div>
         <div>
-            <h1 class="dates">1950s-1960s</h1>
+            <h1 class="dates" id="limelight">1950s-1960s</h1>
         </div>
     </section>
 
     <article class="background" id="gallery-pop">
         <div>
-            <img src="img/jfk.png" alt="">
+            <img src="img/pop/jfk.jpg" alt="">
             <section>
-                <figcaption>PRESIDENT ELECT</figcaption>
-                <h4>JAMES ROSENQUIST</h4>
+                <figcaption id="os-bold">PRESIDENT ELECT</figcaption>
+                <h4 id="os-normal">JAMES ROSENQUIST</h4>
             </section>
 
-            <img src="img/campbell.png" alt="">
+            <img src="img/pop/soup.jpg" alt="">
             <section>
-                <figcaption>CAMPBELL'S SOUP CANS</figcaption>
-                <h4>ANDY WARHOL</h4>
+                <figcaption id="os-bold">CAMPBELL'S SOUP CANS</figcaption>
+                <h4 id="os-normal">ANDY WARHOL</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/whaam.png" alt="">
+            <img src="img/pop/whaam.jpg" alt="">
             <section>
-                <figcaption>WHAAM!</figcaption>
-                <h4>ROY LICHTENSTEIN</h4>
+                <figcaption id="os-bold">WHAAM!</figcaption>
+                <h4 id="os-normal">ROY LICHTENSTEIN</h4>
             </section>
 
-            <img src="img/shadow.png" alt="">
+            <img src="img/pop/shadow.jpg" alt="">
             <section>
-                <figcaption>ME AND MY SHADOW</figcaption>
-                <h4>ROSALYND DREXLER</h4>
+                <figcaption id="os-bold">ME AND MY SHADOW</figcaption>
+                <h4 id="os-normal">ROSALYND DREXLER</h4>
             </section>
         </div>
     </article>
 
     <section id="street" class="info">
         <div>
-            <h1 class="dates">1970s-</h1>
+            <h1 class="dates" id="limelight">1970s-</h1>
         </div>
         <div class="title">
-            <h3>STREET ART</h3>
-            <p id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere deserunt earum
-                fuga.
-                Perspiciatis
-                asperiores, odio velit minima impedit at vitae debitis, alias odit, fugiat nisi ipsam modi quia
-                incidunt.</p>
+            <h3 id="pd-bold-italic">STREET ART</h3>
+            <p class="right" id="os-bold">Part of the Contemporary art period, Street Art evolved from the early stages
+                of graffiti and is known for its public
+                engagement, often being done on exterior walls, bridges and highway overpasses, often done illegally. It
+                often has some
+                sort of political or social theme, its purpose being to provoque its audience. Street art can be done
+                with numerous
+                materials, the most popular benign stencils, aerosol cans and paint.</p>
         </div>
     </section>
 
     <article class="background" id="gallery-street">
         <div>
-            <img src="img/bird.png" alt="">
+            <img src="img/street/bird.jpg" alt="">
             <section>
-                <figcaption>BIRD ON MONEY</figcaption>
-                <h4>JEAN-MICHEL BASQUIAT</h4>
+                <figcaption id="os-bold">BIRD ON MONEY</figcaption>
+                <h4 id="os-normal">JEAN-MICHEL BASQUIAT</h4>
             </section>
 
-            <img src="img/keith.png" alt="">
+            <img src="img/street/keith.jpg" alt="">
             <section>
-                <figcaption>IGNORANCE = FEAR</figcaption>
-                <h4>KEITH HARING</h4>
+                <figcaption id="os-bold">IGNORANCE = FEAR</figcaption>
+                <h4 id="os-normal">KEITH HARING</h4>
             </section>
         </div>
 
         <div>
-            <img src="img/rat.png" alt="">
+            <img src="img/street/blek.jpg" alt="">
             <section>
-                <figcaption>REPLICA OF MADONNA DI LORETA</figcaption>
-                <h4>BLEK LE RAT</h4>
+                <figcaption id="os-bold">REPLICA OF MADONNA DI LORETA</figcaption>
+                <h4 id="os-normal">BLEK LE RAT</h4>
             </section>
 
-            <img src="img/ballon.png" alt="">
+            <img src="img/street/balloon.jpg" alt="">
             <section>
-                <figcaption>GIRL WITH BALLOON</figcaption>
-                <h4>BANKSY</h4>
+                <figcaption id="os-bold">GIRL WITH BALLOON</figcaption>
+                <h4 id="os-normal">BANKSY</h4>
             </section>
         </div>
     </article>
