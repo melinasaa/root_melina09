@@ -64,6 +64,7 @@ nav>ul {
     top: 0;
     overflow: hidden;
     background-color: #BCCBAE;
+    z-index: 1000;
 }
 
 a {
@@ -86,6 +87,11 @@ a.footer {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     color: #292929;
+}
+
+a#os-bold {
+    border: 1.5px solid #292929;
+    padding: 0.5%;
 }
 
 p.where {
@@ -158,6 +164,39 @@ h4 {
     padding: 0px 8% 8%;
 }
 
+.image-fade {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.container-fade {
+    position: relative;
+    width: 100%;
+}
+
+.container-fade:hover .image-fade {
+    opacity: 0.3;
+    cursor: url(img/c-hover.png), auto;
+}
+
+.container-fade:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* HAMBURGER MENU */
 
 .topnav {
@@ -193,6 +232,11 @@ h4 {
 /* MEDIA QUERRIES */
 
 @media screen and (min-width: 400px) {
+
+    a#os-bold {
+        font-size: 80%;
+    }
+
     h1 {
         font-size: 250%;
     }
@@ -240,6 +284,10 @@ h4 {
 @media screen and (min-width: 700px) {
     a.nav {
         font-size: 65%;
+    }
+
+    a#os-bold {
+        font-size: 110%;
     }
 
     h1 {
@@ -328,6 +376,10 @@ h4 {
 @media screen and (min-width: 1400px) {
     a.nav {
         font-size: 95%;
+    }
+
+    a#os-bold {
+        font-size: 140%;
     }
 
     h1 {
