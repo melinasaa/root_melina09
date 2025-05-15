@@ -17,30 +17,25 @@ img#museums {
     padding: 8% 8% 5%;
 }
 
-#gallery {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-}
-
 #info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5%;
 }
-
-/* #museums:hover {
-    transform: scale(110%);
-    transition: 0.8s;
-}
-
-#museums {
-    transform: scale(100%);
-    transition: 0.8s;
-} */
 
 .places {
     padding: 0% 8% 6%;
     text-align: center;
+}
+
+.left {
+    padding: 2% 0% 5% 5%;
+}
+
+.right {
+    padding: 2% 5% 5% 0%;
+    text-align: left;
 }
 
 /* CARDS */
@@ -101,6 +96,12 @@ img#museums {
     cursor: url(img/c-hover.png), auto;
 }
 
+section#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 400px) {
     h6 {
         font-size: 90%;
@@ -111,10 +112,20 @@ img#museums {
     h6 {
         font-size: 150%;
     }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     h6 {
         font-size: 250%;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
     }
 }
