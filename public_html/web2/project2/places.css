@@ -104,13 +104,13 @@ section#cards {
 
 @media screen and (min-width: 400px) {
     h6 {
-        font-size: 90%;
+        font-size: 0.9em;
     }
 }
 
 @media screen and (min-width: 700px) {
     h6 {
-        font-size: 150%;
+        font-size: 1.5em;
     }
 
     #gallery {
@@ -121,7 +121,7 @@ section#cards {
 
 @media screen and (min-width: 1400px) {
     h6 {
-        font-size: 250%;
+        font-size: 2.3em;
     }
 
     #gallery {
