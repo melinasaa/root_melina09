@@ -53,12 +53,12 @@ h2 {
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #3A5A40;
     padding: 2%;
+    text-shadow: #233a27 3.5px 3.5px;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 a {
@@ -67,6 +67,7 @@ a {
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-shadow: #233a27 2px 2px;
 }
 
 a#classes {
@@ -76,11 +77,18 @@ a#classes {
     border-radius: 10px;
     display: block;
     margin: 0.5em 2.5em;
+    box-shadow: #233a27 3px 3px;
+    background-color: #3A5A40;
 }
 
 a#no {
     color: #A3B18A;
     opacity: 50%;
+    font-size: 0.5em;
+}
+
+a#yes {
+    font-size: 0.5em;
 }
 
 a#yes:hover {
@@ -120,5 +128,14 @@ footer {
     #grid0,
     #grid2 {
         padding: 0em 10em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    a#yes,
+    a#no {
+        font-size: 1em;
     }
 }
