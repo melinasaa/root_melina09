@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3A5A40;
+    background-image: url(img/stars.png);
+    background-blend-mode: normal;
+    background-size: contain;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5%;
+    background-color: #3A5A40;
+    opacity: 90%;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#grid0,
+#grid1,
+#grid2,
+#grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 10% 10% 0%;
+    color: #A3B18A;
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #3A5A40;
+    padding: 2%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+a {
+    color: #DAD7CD;
+    text-decoration: none;
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a#classes {
+    border: #A3B18A, 2px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 0.5em 2.5em;
+}
+
+a#no {
+    color: #A3B18A;
+    opacity: 50%;
+}
+
+a#yes:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a#classes:hover {
+    color: #ffffff;
+    background-color: #A3B18A;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.bowlby-one-regular {
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    height: 100px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    #grid1 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #grid0,
+    #grid2 {
+        padding: 0em 10em;
+    }
+}
