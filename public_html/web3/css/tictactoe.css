@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* ALL */
+
 body {
     font-family: "Schoolbell", system-ui;
     font-weight: 400;
@@ -14,66 +16,10 @@ body {
     background-size: contain;
 }
 
-#grille {
-    width: 60vmin;
-    height: 60vmin;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    border: solid #A50505 1vmin;
-}
-
-#grille .case {
-    border: solid #A50505 1vmin;
-    /* border-radius: 5px; */
-    display: grid;
-    place-items: center;
-}
-
-#red {
-    background-color: #E55050;
-}
-
-#white {
-    background-color: #E9EEF3;
-}
-
-/* #grille .case:hover {
-    background-color: rgb(220, 220, 220);
-} */
+/* NAV */
 
 nav {
     text-align: center;
-}
-
-header {
-    display: block;
-}
-
-h1 {
-    font-family: "Schoolbell", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 10vmin;
-    margin: 5vmin 5vmin 0;
-    color: #ffffff;
-    background-color: #7BB55A;
-}
-
-p {
-    text-align: center;
-    padding: 5vmin;
-}
-
-button {
-    font-family: "Schoolbell", cursive;
-    font-weight: 400;
-    font-style: normal;
-    padding: 2%;
-    margin: 2% 2% 0%;
-    border-radius: 60px;
-    font-size: 3vmin;
 }
 
 nav>ul {
@@ -99,6 +45,28 @@ a:hover {
     font-style: italic;
 }
 
+/* HEADER + MAIN */
+
+h1 {
+    font-family: "Schoolbell", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 10vmin;
+    margin: 5vmin 5vmin 0;
+    color: #ffffff;
+    /* background-color: #7BB55A; */
+}
+
+p {
+    text-align: center;
+    padding: 5vmin;
+}
+
+header {
+    display: block;
+}
+
 #message {
     text-align: center;
     /* font-size: 30px;
@@ -114,3 +82,55 @@ a:hover {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#grille {
+    width: 60vmin;
+    height: 60vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    border: solid #A50505 1vmin;
+}
+
+#grille .case {
+    border: solid #A50505 1vmin;
+    /* border-radius: 5px; */
+    display: grid;
+    place-items: center;
+}
+
+#red {
+    background-color: #E55050;
+}
+
+#red:hover {
+    background-color: #be3535;
+}
+
+#white {
+    background-color: #E9EEF3;
+}
+
+#white:hover {
+    background-color: #bbc3cb;
+}
+
+button {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2%;
+    margin: 2% 2% 0%;
+    border-radius: 60px;
+    font-size: 3vmin;
+    background-color: #E1C49B;
+    color: #8b6f49;
+    border-color: #AF9168;
+    border-style: dashed;
+}
+
+button:hover {
+    background-color: #fce0b8;
+}
+
+/* MEDIA QUERRIES */
