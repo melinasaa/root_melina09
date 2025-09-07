@@ -109,8 +109,27 @@ a#classes:hover {
     font-style: normal;
 }
 
-footer {
+div {
     height: 100px;
+}
+
+.extra {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #A3B18A;
+    color: #ffffff;
+    text-shadow: #233a27 2px 2px;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5% 1.5%;
+    box-shadow: 2px 2px #233a27;
+    font-family: "Bowlby One", sans-serif;
+    opacity: 80%;
+}
+
+.extra:hover {
+    text-decoration: underline;
 }
 
 
@@ -137,5 +156,35 @@ footer {
     a#yes,
     a#no {
         font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #grid1 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #grid0,
+    #grid2 {
+        padding: 0em 10em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    a#yes,
+    a#no,
+    a {
+        font-size: 2em;
     }
 }

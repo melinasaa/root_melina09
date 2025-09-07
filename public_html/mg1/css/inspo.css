@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #363636;
+    color: #e0dcd7;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    background-color: #424242;
+    opacity: 90%;
+}
+
+h1, h2, h3 {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+a {
+    color: #e0dcd7;
+    text-decoration: none;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 3%;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 10px;
+    margin: 0.5em 15em;
+    border: #e0dcd7, 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+h3 {
+  padding: 2em;
+  text-align: justify;
+}
+
+#examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 4em;
+}
+
+#example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 2em;
+}
+
+.londrina-solid-thin {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.londrina-solid-light {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.londrina-solid-regular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.londrina-solid-black {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.flamenco-light {
+  font-family: "Flamenco", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.flamenco-regular {
+  font-family: "Flamenco", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

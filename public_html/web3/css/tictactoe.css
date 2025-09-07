@@ -1,29 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Schoolbell", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #7BB55A;
+    background-image: url(../img/background.png);
+    background-blend-mode: normal;
+    background-size: contain;
+}
+
 #grille {
-    width: 30vmin;
-    height: 30vmin;
+    width: 60vmin;
+    height: 60vmin;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+    border: solid #A50505 1vmin;
 }
 
 #grille .case {
-    border: solid black 1px;
+    border: solid #A50505 1vmin;
+    /* border-radius: 5px; */
     display: grid;
     place-items: center;
 }
 
-#grille .case:hover {
-     background-color: rgb(220, 220, 220);
+#red {
+    background-color: #E55050;
 }
 
+#white {
+    background-color: #E9EEF3;
+}
+
+/* #grille .case:hover {
+    background-color: rgb(220, 220, 220);
+} */
+
 nav {
-   text-align: center;
+    text-align: center;
+}
+
+header {
+    display: block;
 }
 
 h1 {
+    font-family: "Schoolbell", system-ui;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
+    font-size: 10vmin;
+    margin: 5vmin 5vmin 0;
+    color: #ffffff;
+    background-color: #7BB55A;
 }
 
 p {
     text-align: center;
+    padding: 5vmin;
+}
+
+button {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2%;
+    margin: 2% 2% 0%;
+    border-radius: 60px;
+    font-size: 3vmin;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    background-color: #6ba549;
+    opacity: 90%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Schoolbell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vmin;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#message {
+    text-align: center;
+    /* font-size: 30px;
+    margin-bottom: 20px; */
+    padding: 0;
+}
+
+#message img {
+    max-width: 15vmin;
+}
+
+.case {
+    background-size: contain;
+    background-repeat: no-repeat;
 }

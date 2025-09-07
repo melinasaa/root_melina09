@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/tictactoe.css">
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Back</a></li>
+            <li><a href="https://www.figma.com/design/WyZvg2frb07etftrtNJJW9/Game?node-id=0-1&p=f&t=Pvvwh1r8gzI6uSIw-0">Figma</a></li>
+        </ul>
+    </nav>
     <main>
-        <header>
-            <h1>TIC TAC TOE</h1>
-        </header>
+        <h1>Ant, Picnic, Sandwich!</h1>
         <section>
-            <p id="message">Time to play!</p>
+            <p id="message"><img src=></p>
         </section>
         <section>
             <article id="grille">
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
-                <div class="case"></div>
+                <div class="case" id="red"></div>
+                <div class="case" id="white"></div>
+                <div class="case" id="red"></div>
+                <div class="case" id="white"></div>
+                <div class="case" id="red"></div>
+                <div class="case" id="white"></div>
+                <div class="case" id="red"></div>
+                <div class="case" id="white"></div>
+                <div class="case" id="red"></div>
             </article>
         </section>
         <nav>
@@ -32,6 +43,4 @@
         </nav>
     </main>
     <script src="JS/tictactoe.js"></script>
-    <p><a href="index.html">Back</a></p>
-</body>
 </html>
