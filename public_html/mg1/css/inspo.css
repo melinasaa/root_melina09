@@ -50,10 +50,18 @@ a:hover {
 /* HEADER + MAIN */
 
 header {
-  padding: 15vmin;
+  padding: 5vmin 15vmin;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+div#w0,
+div#w1,
+div#w2,
+div#w3,
+div#w4 {
+  height: 5vmin;
 }
 
 div {
@@ -90,12 +98,18 @@ h4 {
 }
 
 h3 {
-  padding: 0 3em 2em;
   text-align: justify;
   font-family: "Flamenco", system-ui;
   font-weight: 400;
   font-style: normal;
+  word-spacing: 2px;
+  line-height: 25px;
 }
+
+h3#left {
+  padding-bottom: 2em;
+}
+
 
 h4 {
   text-align: center;
@@ -143,6 +157,10 @@ video:hover {
   transition: 0.5s ease-in-out;
 }
 
+figure {
+  align-items: center;
+}
+
 /* MEDIA QUERRIES */
 
 @media screen and (min-width: 800px) {
@@ -152,6 +170,22 @@ video:hover {
 
   #example {
     grid-template-columns: 1fr 1fr;
+  }
+
+  h3#right {
+    padding: 0 0 2em 3em;
+  }
+  
+  h3#left {
+    padding: 0 2em 3em 0;
+  }
+
+  h4#right {
+    padding: 0 0 0.5em 1em;
+  }
+
+  h4#left {
+    padding: 0 1em 0.5em 0;
   }
 }
 
@@ -166,5 +200,17 @@ video:hover {
 
   h3 {
     padding: 0 0 2em;
+  }
+  
+  h3#right, h3#left {
+    padding: 0 0 2em 0;
+  }
+
+  h4#right, h4#left {
+    padding: 0.5em 0;
+  }
+
+  a{
+    font-size: 2em;
   }
 }

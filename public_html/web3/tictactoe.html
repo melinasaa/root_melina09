@@ -4,26 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Oh, une fourmi!</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFFFFF">
+
     <link rel="stylesheet" href="css/tictactoe.css">
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <ul>
-            <li><a href="index.html">Back</a></li>
+            <li><a href="index.html">Retour</a></li>
             <li><a
                     href="https://www.figma.com/design/WyZvg2frb07etftrtNJJW9/Game?node-id=0-1&p=f&t=Pvvwh1r8gzI6uSIw-0">Figma</a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
     <main>
-        <h1>Oh non, une fourmi!</h1>
+        <h1>Oh, une fourmi!</h1>
         <section>
             <p id="message"><img src=></p>
         </section>
@@ -41,10 +47,43 @@
             </article>
         </section>
         <nav>
-            <button id="replay">JOUER ENCORE</button>
+            <button id="replay">RECOMMENCER</button>
         </nav>
-        <p></p>
     </main>
+
+    <div id="winnerA">
+        <div class="win">
+            <figure>
+                <img src="img/win-a.svg" id="win" alt="">
+                <img src="img/win-star.svg" class="star" alt=""> 
+            </figure>
+            
+            <button id="winReplayA">REJOUER</button>
+        </div>
+    </div>
+
+    <div id="winnerS">
+        <div class="win">
+            <figure>
+                <img src="img/win-s.svg" id="win" alt="">
+                <img src="img/win-star.svg" class="star" alt=""> 
+            </figure>
+            
+            <button id="winReplayS">REJOUER</button>
+        </div>
+    </div>
+
+    <div id="tie">
+        <div class="win">
+            <figure>
+                <img src="img/tie.svg" id="tied" alt="">
+                <img src="img/win-star.svg" class="star" alt="">
+            </figure>
+            
+            <button id="winReplayN">REJOUER</button>
+        </div>
+    </div>
+
     <script src="JS/tictactoe.js"></script>
 
 </html>

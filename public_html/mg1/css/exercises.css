@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ALL */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #a492bf;
+  color: #e0dcd7;
+}
+
+/* NAV */
+
+nav>ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5%;
+  background-color: #a492bf;
+  opacity: 90%;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+a {
+  color: #e0dcd7;
+  text-decoration: none;
+  font-family: "Bowlby one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  text-shadow: #312740 2px 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* HEADER + MAIN */
+
+header {
+  padding: 5vmin 15vmin;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+div#w0,
+div#w1,
+div#w2,
+div#w3,
+div#w4 {
+  height: 5vmin;
+}
+
+div {
+  text-align: right;
+}
+
+h1, h2 {
+  font-size: 10vmin;
+  font-family: "Bowlby one", serif;
+  font-weight: 400;
+  text-shadow: #312740 3.5px 3.5px;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  padding: 0.5em 0.5em;
+  font-weight: 300;
+}
+
+#examples {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 2vmin;
+}
+
+#example {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 3em;
+  flex-direction: column;
+}
+
+/* img {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+img:hover {
+  box-shadow: #e0dcd7 3px 3px 30px;
+  transition: 0.5s ease-in-out;
+} */
+
+video {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+video:hover {
+  box-shadow: #120624 3px 3px 30px;
+  transition: 0.5s ease-in-out;
+}
+
+figure {
+  align-items: center;
+}
+
+/* MEDIA QUERRIES */
+
+@media screen and (min-width: 800px) {
+  #examples {
+    grid-template-columns: 1fr;
+  }
+
+  #example {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h3#right {
+    padding: 0 0 2em 3em;
+  }
+  
+  h3#left {
+    padding: 0 2em 3em 0;
+  }
+
+  h4#right {
+    padding: 0 0 0.5em 1em;
+  }
+
+  h4#left {
+    padding: 0 1em 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #examples {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #example {
+    grid-template-columns: 1fr;
+  }
+
+  h3 {
+    padding: 0 0 2em;
+  }
+  
+  h3#right, h3#left {
+    padding: 0 0 2em 0;
+  }
+
+  h4#right, h4#left {
+    padding: 0.5em 0;
+  }
+
+  a{
+    font-size: 2em;
+  }
+}
