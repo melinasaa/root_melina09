@@ -101,6 +101,8 @@ header {
 
 #red {
     background-color: #E55050;
+    background-origin: content-box;
+    padding: 1vmin;
 }
 
 #red:hover {
@@ -109,6 +111,8 @@ header {
 
 #white {
     background-color: #f9f9f9;
+    background-origin: content-box;
+    padding: 1vmin;
 }
 
 #white:hover {
@@ -185,14 +189,21 @@ img#tied {
 img.star {
     width: 65vmin;
     animation: spin 5s ease;
+    z-index: -10;
+    position: relative;
 }
 
 figure {
-   position: relative;
-   display: inline;
+    position: relative;
+    display: inline;
 }
 
 @keyframes spin {
-    from{ transform: rotate(0deg); }
-    to{ transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

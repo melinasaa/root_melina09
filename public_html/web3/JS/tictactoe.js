@@ -10,6 +10,9 @@ let winReplayBtnA = document.getElementById("winReplayA");
 let winReplayBtnS = document.getElementById("winReplayS");
 let winReplayBtnN = document.getElementById("winReplayN");
 let winner = false;
+let starA = document.getElementById("starA");
+let starS = document.getElementById("starS");
+let starT = document.getElementById("starT");
 
 let joueurX = true;
 let gagnant = '';
@@ -50,6 +53,7 @@ const valide = function () {
     if (allUsed && !winner) {
         console.log("C'est une partie nulle!");
         tie.classList.add("active");
+        starT.classList.add("star");
     }
     for (let patron of patrons) {
         let val1 = cases[patron[0]].style.backgroundImage.slice(5, 14);
@@ -65,9 +69,11 @@ const valide = function () {
 
             if (val1 == "img/s.svg") {
                 winnerS.classList.add("active");
+                starS.classList.add("star");
             }
             else {
                 winnerA.classList.add("active");
+                starA.classList.add("star");
             }
 
             for (let boite of cases) {
@@ -93,7 +99,9 @@ winReplayBtnA.addEventListener("click", function () {
         boite.style.backgroundImage = "";
         joueurX = true;
     }
+    winner = false;
     winnerA.classList.remove("active");
+    starA.classList.remove("star");
 });
 
 winReplayBtnS.addEventListener("click", function () {
@@ -102,7 +110,9 @@ winReplayBtnS.addEventListener("click", function () {
         boite.style.backgroundImage = "";
         joueurX = true;
     }
+    winner = false;
     winnerS.classList.remove("active");
+    starS.classList.remove("star");
 });
 
 winReplayBtnN.addEventListener("click", function () {
@@ -111,5 +121,8 @@ winReplayBtnN.addEventListener("click", function () {
         boite.style.backgroundImage = "";
         joueurX = true;
     }
+    winner = false;
     tie.classList.remove("active");
+    starT.classList.remove("star");
 });
+
