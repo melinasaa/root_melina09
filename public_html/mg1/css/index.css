@@ -59,6 +59,17 @@ a#classes:hover {
 
 /* HEADER + MAIN */
 
+header{
+    display: grid;
+    justify-content: center;
+    padding: 10%;
+}
+
+video {
+    height: 12vmin;
+    border-radius: 50px;
+}
+
 h1,
 h2 {
     text-align: center;
