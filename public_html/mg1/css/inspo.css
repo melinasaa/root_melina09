@@ -20,7 +20,7 @@ body {
 nav>ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5%;
   background-color: #424242;
   opacity: 90%;
@@ -147,9 +147,9 @@ img:hover {
 
 iframe {
   align-items: center;
-  width: 70vmin;
-  height: 40vmin;
+  width: 100%;
   border-radius: 10px;
+  aspect-ratio: 16 / 9;
 }
 
 iframe:hover {
@@ -170,11 +170,6 @@ figure {
 
   #example {
     grid-template-columns: 1fr 1fr;
-  }
-
-  iframe {
-    width: 65vmin;
-    height: 40vmin;
   }
 
   h3#right {
@@ -201,11 +196,6 @@ figure {
 
   #example {
     grid-template-columns: 1fr;
-  }
-
-  iframe {
-    width: 25vmin;
-    height: 15vmin;
   }
 
   h3 {

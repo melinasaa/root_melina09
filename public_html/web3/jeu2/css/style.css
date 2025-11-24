@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    background: none;
+    width: 3em;
+    height: 3em;
+}
+
+#uArrow {
+    top: 0px;
+    width: 100%;
+}
+
+#dArrow {
+    bottom: 0px;
+    width: 100%;
+}
+
+#lArrow {
+    left: 0px;
+    height: 100%;
+}
+
+#rArrow {
+    right: 0px;
+    height: 100%;
+}
+
+/* body {
+    background-color: #192A3A;
+    background-image: url(../images/background.png);
+    background-blend-mode: normal;
+    background-size: contain;
+} */
