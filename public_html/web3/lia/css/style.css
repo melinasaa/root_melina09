@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    background: none;
+    width: 3em;
+    height: 3em;
+}
+
+#uArrow {
+    top: 0px;
+    width: 100%;
+}
+
+#dArrow {
+    bottom: 0px;
+    width: 100%;
+}
+
+#lArrow {
+    left: 0px;
+    height: 100%;
+}
+
+#rArrow {
+    right: 0px;
+    height: 100%;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(223, 2, 43);
+    background: #111111;
+    border: 2px solid rgb(175, 175, 175);
+    box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2.5em;
+    z-index: 20;
+}
+
+#timer div {
+    margin-bottom: 5px;
+}
+
+.hidden,
+.hidden-s {
+    display: none;
+}
+
+#button.visible {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    /* right: 2.5em;
+    margin-bottom: 2em; */
+    z-index: 9999;
+    display: block;
+    top: 34em;
+}
+
+a#button:hover {
+    background-color: #580b0b;
+    text-decoration: underline;
+    transition: 0.5s;
+    box-shadow: rgb(238, 95, 95) 0px 0px 15px;
+}
+
+a#button {
+    color: rgb(223, 2, 43);
+    text-shadow: rgb(238, 95, 95) 0px 0px 15px;
+    font-size: 1.5em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#restart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+#mini-game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameBox {
+    position: relative;
+}
+
+#button-s.visible-s {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    top: 6.5em;
+}
+
+a#button-s:hover {
+    background-color: #ffef9c;
+    text-decoration: underline;
+    transition: 0.5s;
+    box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+}
+
+a#button-s {
+    color: rgb(246, 161, 23);
+    text-shadow: rgb(255, 255, 255) 0px 0px 15px;
+    font-size: 5em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}

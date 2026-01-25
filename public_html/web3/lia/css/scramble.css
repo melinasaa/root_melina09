@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jersey 10", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2c224;
+}
+
+.container {
+    width: 75%;
+    background-color: rgb(244, 244, 244);
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 2px;
+    padding: 18px 25px;
+    border-bottom: 5px solid #f2c224;
+}
+
+.container .content {
+    margin: 20px 25px 35px;
+}
+
+.content .word {
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: 25px;
+    margin-right: -24px;
+    text-transform: uppercase;
+}
+
+.content input {
+    width: 100%;
+    height: 54px;
+    outline: none;
+    font-size: 2em;
+    padding: 0 16px;
+    border: 1px solid #ffde25;
+    margin-top: 22px;
+}
+
+.content .buttons {
+    display: flex;
+    margin-top: 22px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 1.5em;
+    width: calc(100% / 2 - 10px);
+}
+
+.buttons .refresh-word {
+    background-color: rgb(217, 169, 57);
+}
+
+.buttons .refresh-word:hover {
+    background-color: #cc9b15;
+}
+
+.buttons .check-word {
+    background-color: rgb(156, 207, 69);
+}
+
+.buttons .check-word:hover {
+    background-color: #79a34c;
+}
+
+#button-r.hidden {
+    display: none;
+}
+
+#button-r.visible {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+a#button-r {
+    color: rgb(204 157 48);
+    text-shadow: rgb(255, 255, 255) 0px 0px 15px;
+    font-size: 3em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a#button-r:hover {
+    background-color: #ffef9c;
+    text-decoration: underline;
+    transition: 0.5s;
+    box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+}
+
+#back {
+    padding: 2em;
+}
+
+body {
+    flex-direction: column;
+}

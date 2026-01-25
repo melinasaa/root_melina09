@@ -147,7 +147,7 @@ div {
 @media screen and (min-width: 800px) {
 
     #grid1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #grid3 {
@@ -172,7 +172,7 @@ div {
 @media screen and (min-width: 1400px) {
 
     #grid1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #grid3 {
