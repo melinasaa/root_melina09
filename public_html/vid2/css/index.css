@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    background-color: #e7872e;
-    background-image: url(../diamond.png);
+    background-color: #db5252;
+    background-image: url(../triangle_background.png);
     background-blend-mode: normal;
     background-size: contain;
 }
@@ -24,7 +24,7 @@ nav>ul {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5%;
-    background-color: #e7872e;
+    background-color: #db5252;
     opacity: 90%;
 }
 
@@ -45,14 +45,14 @@ a#yes:hover {
 }
 
 /* a#no {
-    color: #e3945b;
+    color: #a492bf;
     opacity: 50%;
     font-size: 0.5em;
 } */
 
 a#classes:hover {
     color: #ffffff;
-    background-color: #ffb871;
+    background-color: #fd8989;
     text-decoration: underline;
     transition: 0.5s;
 }
@@ -74,20 +74,16 @@ h1,
 h2 {
     text-align: center;
     margin: 10% 10% 0%;
-    color: #ffb871;
+    color: #fd8989;
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 2%;
-    text-shadow: #5f2a05 3.5px 3.5px;
+    text-shadow: #520f0f 3.5px 3.5px;
 }
 
 h1 {
     font-size: 2em;
-}
-
-h1.poster {
-    margin: 2% 10% 0;
 }
 
 a {
@@ -96,18 +92,18 @@ a {
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-shadow: #5f2a05 2px 2px;
+    text-shadow: #520f0f 2px 2px;
 }
 
 a#classes {
-    border: #ffb871, 2px;
+    border: #fd8989, 2px;
     border-style: solid;
     padding: 10px;
     border-radius: 10px;
     display: block;
     margin: 0.5em 2.5em;
-    box-shadow: #5f2a05 3px 3px;
-    background-color: #e7872e;
+    box-shadow: #520f0f 3px 3px;
+    background-color: #db5252;
 }
 
 #grid0,
@@ -131,26 +127,22 @@ div {
 .line {
     width: 70%;
     height: 2px;
-    background: #ffb871;
+    background: #db5252;
     margin: 5rem auto 0;
     border: none;
     border-radius: 50px;
-    box-shadow: #5f2a05 3px 3px;
-}
-
-#poster {
-    width: 100%;
+    box-shadow: #520f0f 3px 3px;
 }
 
 iframe {
     align-items: center;
-    width: 50%;
-    aspect-ratio: 9 / 9;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 15px;
 }
 
 iframe:hover {
-    box-shadow: #371801 3px 3px 30px;
+    box-shadow: #520f0f 3px 3px 30px;
     transition: 0.5s ease-in-out;
 }
 

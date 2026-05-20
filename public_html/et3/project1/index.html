@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-plane cursor-listener="" position="0.18411 0 -4" rotation="-90 0 0" width="10" height="4" color="#707070"
+            scale="2.5 1.5 1"></a-plane>
+        <a-sky color="#bfe2ff"></a-sky>
+        <a-gltf-model cursor-listener="" id="object" src="car.glb" gltf-model="car.glb" position="0 0.45 -3.78525"
+            rotation="0 -90 0"></a-gltf-model>
+        <a-entity light="color: #fbedbc; intensity: 1.884; castShadow: true" position="3.6638 5.81348 -10.507"
+            data-aframe-default-light="" aframe-injected=""></a-entity>
+
+        <a-entity camera look-controls wasd-controls position="0 2 1">
+            <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat">
+            </a-entity>
+        </a-entity>
+    </a-scene>
+
+    <script>
+        let lookedAtOnce = false
+        let mySound = new Audio('car.wav');
+
+        AFRAME.registerComponent('cursor-listener', {
+            init: function () {
+                var lastIndex = -1;
+                this.el.addEventListener('click', function (evt) {
+
+                    if (this.getAttribute("id") == "object") {
+                        if (!lookedAtOnce) {
+                            alert("VROOM!"); lookedAtOnce = true;
+                            mySound.play();
+                        } else {
+                            this.setAttribute("animation", "dur: 300; property: position; to: -17.90 0.45 -3.785;");
+                        }
+                    }
+
+                });
+
+            }
+        });
+    </script>
+</body>
+
+</html>

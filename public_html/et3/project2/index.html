@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+
+<body>
+    <a-scene mindar-image="imageTargetSrc: targets.mind" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false; rayOrigin: mouse;"
+        raycaster="far: ${customFields.libVersion}; objects: .clickable">
+        <a-assets>
+            <a-asset-item id="avatarModel" src="./camera.glb"></a-asset-item>
+            <a-asset-item id="avatarMode2" src="./clapper.glb"></a-asset-item>
+            <a-asset-item id="avatarMode3" src="./movie3.glb"></a-asset-item>
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false;" cursor="fuse: false; rayOrigin: mouse;"
+            raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+            
+        <a-entity mindar-image-target="targetIndex: 0">
+            <a-gltf-model rotation="0 180 0 " position="0 0 0.1" scale="0.009 0.009 0.009" src="#avatarModel">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 1">
+            <a-gltf-model rotation="0 90 0 " position="0 0 -1.5" scale="2.005 2.005 2.005" src="#avatarMode2">
+        </a-entity>
+        <a-entity id="mytarget" mytarget mindar-image-target="targetIndex: 2">
+            <a-gltf-model id="avatarMode3" rotation="9 0 0" class="clickable" position="-0.1 -0.1 -1"
+                scale="0.205 0.205 0.205" src="#avatarMode3">
+        </a-entity>
+    </a-scene>
+</body>
+
+<script>
+    const models = document.querySelectorAll(".clickable");
+    for (const model of models) {
+        model.addEventListener("click", () => {
+            alert("GO TO THE CINEMA!");
+        })
+    };
+</script>
+
+</html>

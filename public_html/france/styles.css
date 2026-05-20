@@ -1,0 +1,227 @@
+* {
+    margin: 0em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCF9;
+    margin: 0.2em;
+}
+
+
+header {
+    background: url(background.png) center / cover no-repeat;
+    height: 30vh;
+    margin: 1em 0.5em;
+}
+
+/* TEXT SCROLL */
+
+nav {
+    background-color: #57120F;
+    padding: 1.5em;
+    margin: 0.5em;
+}
+
+h1 {
+    color: #FFFCF9;
+    font-size: 1.5em;
+    font-family: "Rammetto One", sans-serif;
+    text-align: center;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 5em;
+}
+
+.RightToLeft {
+    animation: RightToLeft 8s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* IMAGE CAROUSEL */
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    background-color: #57120F;
+    margin: 0.5em;
+}
+
+.image-carousel {
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+    animation: bannermove 30s linear infinite;
+}
+
+.image-carousel img {
+    height: 15em;
+    width: auto;
+    margin: 3.5em 1em;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+        /* Start position */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move left by 50% of the container's total width (half of the images) */
+    }
+}
+
+/* ALL */
+
+main {
+    background-color: #FFEDA1;
+    margin: 0.5em 0.5em 1em;
+}
+
+h2,
+h3 {
+    font-size: 2em;
+    font-family: "Rammetto One", sans-serif;
+    text-align: center;
+    color: #57120F;
+    padding: 1em;
+}
+
+p {
+    font-size: 1em;
+    color: #57120F;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    padding: 0 2em 2em;
+}
+
+p#trip {
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+figure#wicks {
+    background-color: #A0BFFF;
+    margin: 0.5em;
+}
+
+figure#jasotte {
+    background-color: #fe542e;
+    margin: 0.5em;
+}
+
+div#invert {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+img {
+    width: 75%;
+    margin: 3em;
+    background-color: #FFFCF9;
+    padding: 0.5em;
+}
+
+a {
+    font-family: "Rammetto One", sans-serif;
+    color: #57120F;
+    background-color: #FFFCF9;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .jasotte-image,
+    .jasotte-text {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header {
+        height: 40vh;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    h2,
+    h3 {
+        font-size: 3em;
+    }
+
+    .image-carousel img {
+        height: 30em;
+        margin: 5em 2em;
+    }
+
+    .image-carousel {
+        gap: 30px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div#invert {
+        display: none;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    img {
+        padding: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        height: 80vh;
+    }
+}
