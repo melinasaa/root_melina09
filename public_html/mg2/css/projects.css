@@ -46,7 +46,7 @@ a#yes:hover {
 
 a#classes:hover {
     color: #ffffff;
-    background-color: #809ffc;
+    background-color: #5875d4;
     text-decoration: underline;
     transition: 0.5s;
 }
@@ -62,7 +62,7 @@ h1,
 h2 {
     text-align: center;
     margin: 2% 10% 0%;
-    color: #809ffc;
+    color: #5875d4;
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -128,7 +128,7 @@ div {
 .line {
     width: 70%;
     height: 2px;
-    background: #809ffc;
+    background: #5875d4;
     margin: 5rem auto 0;
     border: none;
     border-radius: 50px;
